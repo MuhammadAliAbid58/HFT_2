@@ -1,0 +1,13 @@
+{
+    "Host": "demo-uk-eqx-01.p.c-trader.com",
+    "Port": 5212,
+    "SSL": true,
+    "Username": "9405524",
+    "Password": "12345678",
+    "BeginString": "FIX.4.4",
+    "SenderCompID": "demo.icmarkets.9405524",
+    "SenderSubID": "TRADE",
+    "TargetCompID": "cServer",
+    "TargetSubID": "TRADE",
+    "HeartBeat": "30"
+}
