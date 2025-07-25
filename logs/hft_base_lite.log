@@ -1,0 +1,2367 @@
+2025-07-23 11:58:01,724 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 11:58:01,741 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250723.log, dom=dom_data_eurusd_20250723.log
+2025-07-23 11:58:01,746 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250723.log, dom=dom_data_gbpusd_20250723.log
+2025-07-23 11:58:01,751 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250723.log, dom=dom_data_usdjpy_20250723.log
+2025-07-23 11:58:01,756 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250723.log, dom=dom_data_audusd_20250723.log
+2025-07-23 11:58:01,757 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-23 11:58:01,791 - main - INFO - ============================================================
+2025-07-23 11:58:01,792 - main - INFO - HFT BASE LITE - STARTING
+2025-07-23 11:58:01,793 - main - INFO - ============================================================
+2025-07-23 11:58:01,794 - main - INFO - Active Symbols: 4
+2025-07-23 11:58:01,795 - main - INFO -   1: EURUSD
+2025-07-23 11:58:01,796 - main - INFO -   2: GBPUSD
+2025-07-23 11:58:01,797 - main - INFO -   4: USDJPY
+2025-07-23 11:58:01,798 - main - INFO -   5: AUDUSD
+2025-07-23 11:58:01,799 - main - INFO - Session Duration: 60 minutes
+2025-07-23 11:58:01,800 - main - INFO - ============================================================
+2025-07-23 11:58:01,816 - main - INFO - Initializing DataCollector...
+2025-07-23 11:58:01,817 - main - ERROR - Fatal error: name 'CertificateOptions' is not defined
+2025-07-23 11:58:01,818 - main - ERROR - 
+Traceback (most recent call last):
+  File "/workspace/HFT-BASE-main/HFT_BASE_LITE/main.py", line 56, in main
+    collector = DataCollector()
+                ^^^^^^^^^^^^^^^
+  File "/workspace/HFT-BASE-main/HFT_BASE_LITE/classes/DataCollector.py", line 40, in __init__
+    self.client_openapi = OpenApiClient(HOST, PORT, TcpProtocol)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/ctrader_open_api/client.py", line 13, in __init__
+    endpoint = clientFromString(self._runningReactor, f"ssl:{host}:{port}")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/twisted/internet/endpoints.py", line 2116, in clientFromString
+    kwargs = _clientParsers[name](*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/twisted/internet/endpoints.py", line 2000, in _parseClientSSL
+    return _parseClientSSLOptions(kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/twisted/internet/endpoints.py", line 1965, in _parseClientSSLOptions
+    configuration = CertificateOptions(
+                    ^^^^^^^^^^^^^^^^^^
+NameError: name 'CertificateOptions' is not defined
+2025-07-23 11:58:01,824 - main - INFO - Generating final performance report...
+2025-07-23 11:58:01,825 - main - INFO - ============================================================
+2025-07-23 11:58:01,827 - main - INFO - HFT BASE LITE - SHUTDOWN COMPLETE
+2025-07-23 11:58:01,828 - main - INFO - ============================================================
+2025-07-23 11:58:01,860 - DataLogger - INFO - All data log files closed
+2025-07-23 12:27:30,237 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 12:27:30,244 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250723.log, dom=dom_data_eurusd_20250723.log
+2025-07-23 12:27:30,252 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250723.log, dom=dom_data_gbpusd_20250723.log
+2025-07-23 12:27:30,255 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250723.log, dom=dom_data_usdjpy_20250723.log
+2025-07-23 12:27:30,258 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250723.log, dom=dom_data_audusd_20250723.log
+2025-07-23 12:27:30,260 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-23 12:27:30,268 - main - INFO - ============================================================
+2025-07-23 12:27:30,269 - main - INFO - HFT BASE LITE - STARTING
+2025-07-23 12:27:30,270 - main - INFO - ============================================================
+2025-07-23 12:27:30,271 - main - INFO - Active Symbols: 4
+2025-07-23 12:27:30,272 - main - INFO -   1: EURUSD
+2025-07-23 12:27:30,273 - main - INFO -   2: GBPUSD
+2025-07-23 12:27:30,274 - main - INFO -   4: USDJPY
+2025-07-23 12:27:30,275 - main - INFO -   5: AUDUSD
+2025-07-23 12:27:30,276 - main - INFO - Session Duration: 60 minutes
+2025-07-23 12:27:30,277 - main - INFO - ============================================================
+2025-07-23 12:27:30,278 - main - INFO - Initializing DataCollector...
+2025-07-23 12:27:30,280 - TickClient_EURUSD - INFO - TickClient initialized for EURUSD
+2025-07-23 12:27:30,281 - DepthClient_EURUSD - INFO - DepthClient initialized for EURUSD
+2025-07-23 12:27:30,282 - TickClient_GBPUSD - INFO - TickClient initialized for GBPUSD
+2025-07-23 12:27:30,283 - DepthClient_GBPUSD - INFO - DepthClient initialized for GBPUSD
+2025-07-23 12:27:30,284 - TickClient_USDJPY - INFO - TickClient initialized for USDJPY
+2025-07-23 12:27:30,285 - DepthClient_USDJPY - INFO - DepthClient initialized for USDJPY
+2025-07-23 12:27:30,286 - TickClient_AUDUSD - INFO - TickClient initialized for AUDUSD
+2025-07-23 12:27:30,287 - DepthClient_AUDUSD - INFO - DepthClient initialized for AUDUSD
+2025-07-23 12:27:30,288 - TradingClient - INFO - TradingClient initialized
+2025-07-23 12:27:30,288 - DataLogger - INFO - Data logging session started
+2025-07-23 12:27:30,289 - DataCollector - INFO - DataCollector initialized for simplified HFT trading
+2025-07-23 12:27:30,291 - DataCollector - INFO - === System Status ===
+2025-07-23 12:27:30,292 - DataCollector - INFO - OpenAPI: Disconnected
+2025-07-23 12:27:30,293 - DataCollector - INFO - FIX: Disconnected
+2025-07-23 12:27:30,294 - DataCollector - INFO - Active Positions: 0
+2025-07-23 12:27:30,296 - DataCollector - INFO - Ready Symbols: 0/4
+2025-07-23 12:27:30,297 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 12:27:30,298 - DataCollector - INFO - ====================
+2025-07-23 12:27:30,299 - main - INFO - Starting trading system...
+2025-07-23 12:27:30,300 - main - INFO - Press Ctrl+C to stop
+2025-07-23 12:27:30,314 - DataCollector - INFO - Starting HFT Base Lite data collector...
+2025-07-23 12:27:30,339 - DataCollector - INFO - FIX connected
+2025-07-23 12:27:30,365 - DataCollector - INFO - OpenAPI connected - authenticating...
+2025-07-23 12:27:31,468 - DataLogger - INFO - Raw payload logging initialized: raw_payloads_20250723.log
+2025-07-23 12:27:31,469 - DataCollector - INFO - Application authenticated - getting accounts...
+2025-07-23 12:27:32,458 - DataCollector - INFO - Available accounts:
+2025-07-23 12:27:32,461 - DataCollector - INFO -   - Account ID: 43022787
+2025-07-23 12:27:32,465 - DataCollector - INFO -   - Account ID: 43035165
+2025-07-23 12:27:32,468 - DataCollector - INFO - ✅ Found working account: 43035165
+2025-07-23 12:27:32,474 - DataCollector - INFO - Using account: 43035165
+2025-07-23 12:27:33,478 - DataCollector - INFO - Account 43035165 authenticated - subscribing to market data...
+2025-07-23 12:27:33,483 - DataCollector - INFO - Subscribed to spots for all symbols: [1, 2, 4, 5]
+2025-07-23 12:27:33,488 - DataCollector - INFO - Subscribed to depth for all symbols: [1, 2, 4, 5]
+2025-07-23 12:27:34,447 - DataLogger - ERROR - Error logging tick data for symbol 1: unsupported format string passed to NoneType.__format__
+2025-07-23 12:27:34,450 - DataLogger - ERROR - Error logging tick data for symbol 2: unsupported format string passed to NoneType.__format__
+2025-07-23 12:27:34,453 - DataLogger - ERROR - Error logging tick data for symbol 4: unsupported format string passed to NoneType.__format__
+2025-07-23 12:27:34,456 - DataLogger - ERROR - Error logging tick data for symbol 5: unsupported format string passed to NoneType.__format__
+2025-07-23 12:27:34,460 - DataCollector - INFO - Spot subscription confirmed for account 43035165
+2025-07-23 12:27:34,469 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:27:34,529 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:27:34,535 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:27:34,539 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:27:35,287 - DataLogger - WARNING - High tick latency for GBPUSD: 48.00ms
+2025-07-23 12:27:35,296 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:27:35,887 - DataLogger - WARNING - High tick latency for AUDUSD: 47.00ms
+2025-07-23 12:27:35,896 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:27:36,057 - DataLogger - WARNING - High tick latency for EURUSD: 56.00ms
+2025-07-23 12:27:36,063 - DataLogger - WARNING - High tick latency for GBPUSD: 63.00ms
+2025-07-23 12:27:36,069 - DataLogger - WARNING - High tick latency for USDJPY: 69.00ms
+2025-07-23 12:27:36,075 - DataLogger - WARNING - High tick latency for AUDUSD: 75.00ms
+2025-07-23 12:27:36,286 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:27:36,293 - DataLogger - WARNING - High tick latency for EURUSD: 53.00ms
+2025-07-23 12:27:36,298 - DataLogger - WARNING - High tick latency for USDJPY: 58.00ms
+2025-07-23 12:27:36,316 - DataLogger - WARNING - High tick latency for AUDUSD: 76.00ms
+2025-07-23 12:27:36,696 - DataLogger - WARNING - High tick latency for USDJPY: 56.00ms
+2025-07-23 12:27:36,718 - DataLogger - WARNING - High tick latency for AUDUSD: 74.00ms
+2025-07-23 12:27:36,881 - DataLogger - WARNING - High tick latency for GBPUSD: 43.00ms
+2025-07-23 12:27:36,890 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:27:37,048 - DataLogger - WARNING - High tick latency for AUDUSD: 48.00ms
+2025-07-23 12:27:37,277 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:27:37,296 - DataLogger - WARNING - High tick latency for AUDUSD: 55.00ms
+2025-07-23 12:27:37,685 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:27:37,693 - DataLogger - WARNING - High tick latency for AUDUSD: 52.00ms
+2025-07-23 12:27:39,285 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:27:39,481 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:27:39,679 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:27:40,286 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 12:27:40,293 - DataLogger - WARNING - High tick latency for AUDUSD: 56.00ms
+2025-07-23 12:27:40,314 - DataCollector - INFO - === System Status ===
+2025-07-23 12:27:40,318 - DataCollector - INFO - OpenAPI: Connected
+2025-07-23 12:27:40,321 - DataCollector - INFO - FIX: Connected
+2025-07-23 12:27:40,324 - DataCollector - INFO - Active Positions: 0
+2025-07-23 12:27:40,327 - DataCollector - INFO - Ready Symbols: 2/4
+2025-07-23 12:27:40,330 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 12:27:40,332 - DataCollector - INFO - ====================
+2025-07-23 12:27:40,335 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.2 minutes
+Ticks Processed: 30
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.27ms
+  95th Percentile: 5.31ms
+  Min/Max: 1.64ms / 5.44ms
+  Sample Count: 30
+
+Depth Processing Latencies:
+  Average: 1.10ms
+  95th Percentile: 1.76ms
+  Min/Max: 0.03ms / 14.31ms
+  Sample Count: 55
+
+============================================================
+2025-07-23 12:27:40,338 - DataLogger - INFO - ================================================================================
+2025-07-23 12:27:40,350 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:27:40,355 - DataLogger - INFO - ================================================================================
+2025-07-23 12:27:40,358 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:27:40,361 - DataLogger - INFO -   TICK DATA (4 updates):
+2025-07-23 12:27:40,364 - DataLogger - INFO -     Average: 1991.75ms
+2025-07-23 12:27:40,367 - DataLogger - INFO -     Min/Max: 48.00ms / 7810.00ms
+2025-07-23 12:27:40,370 - DataLogger - INFO -     P50/P95/P99: 53.00ms / 56.00ms / 56.00ms
+2025-07-23 12:27:40,372 - DataLogger - INFO -   DOM DATA (8 updates):
+2025-07-23 12:27:40,375 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 12:27:40,378 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 12:27:40,380 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 12:27:40,383 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:27:40,385 - DataLogger - INFO -   TICK DATA (6 updates):
+2025-07-23 12:27:40,388 - DataLogger - INFO -     Average: 377.17ms
+2025-07-23 12:27:40,390 - DataLogger - INFO -     Min/Max: 43.00ms / 2010.00ms
+2025-07-23 12:27:40,393 - DataLogger - INFO -     P50/P95/P99: 48.00ms / 63.00ms / 63.00ms
+2025-07-23 12:27:40,396 - DataLogger - INFO -   DOM DATA (9 updates):
+2025-07-23 12:27:40,399 - DataLogger - INFO -     Average: 0.11ms
+2025-07-23 12:27:40,416 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:27:40,419 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 12:27:40,422 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:27:40,424 - DataLogger - INFO -   TICK DATA (10 updates):
+2025-07-23 12:27:40,427 - DataLogger - INFO -     Average: 66.30ms
+2025-07-23 12:27:40,430 - DataLogger - INFO -     Min/Max: 42.00ms / 212.00ms
+2025-07-23 12:27:40,433 - DataLogger - INFO -     P50/P95/P99: 44.00ms / 69.00ms / 69.00ms
+2025-07-23 12:27:40,436 - DataLogger - INFO -   DOM DATA (20 updates):
+2025-07-23 12:27:40,438 - DataLogger - INFO -     Average: 0.05ms
+2025-07-23 12:27:40,441 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:27:40,444 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 12:27:40,447 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:27:40,450 - DataLogger - INFO -   TICK DATA (10 updates):
+2025-07-23 12:27:40,453 - DataLogger - INFO -     Average: 73.50ms
+2025-07-23 12:27:40,456 - DataLogger - INFO -     Min/Max: 46.00ms / 206.00ms
+2025-07-23 12:27:40,459 - DataLogger - INFO -     P50/P95/P99: 55.00ms / 76.00ms / 76.00ms
+2025-07-23 12:27:40,461 - DataLogger - INFO -   DOM DATA (18 updates):
+2025-07-23 12:27:40,464 - DataLogger - INFO -     Average: 0.11ms
+2025-07-23 12:27:40,467 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:27:40,470 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:27:40,473 - DataLogger - INFO - ================================================================================
+2025-07-23 12:27:40,476 - DataCollector - INFO - DATA RATES:
+2025-07-23 12:27:40,478 - DataCollector - INFO -   EURUSD: Tick=0.4/s, DOM=0.8/s
+2025-07-23 12:27:40,485 - DataCollector - INFO -   GBPUSD: Tick=0.6/s, DOM=0.9/s
+2025-07-23 12:27:40,488 - DataCollector - INFO -   USDJPY: Tick=1.0/s, DOM=2.0/s
+2025-07-23 12:27:40,491 - DataCollector - INFO -   AUDUSD: Tick=1.0/s, DOM=1.8/s
+2025-07-23 12:27:40,496 - DataLogger - WARNING - High tick latency for EURUSD: 59.00ms
+2025-07-23 12:27:40,881 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:27:41,284 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 12:27:42,282 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:27:42,484 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:27:42,492 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:27:43,283 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:27:43,294 - DataLogger - WARNING - High tick latency for EURUSD: 54.00ms
+2025-07-23 12:27:43,481 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:27:43,683 - DataLogger - WARNING - High tick latency for GBPUSD: 45.00ms
+2025-07-23 12:27:43,883 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:27:43,891 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 12:27:44,285 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-23 12:27:44,297 - DataLogger - WARNING - High tick latency for USDJPY: 57.00ms
+2025-07-23 12:27:45,315 - DataLogger - WARNING - High tick latency for USDJPY: 58.00ms
+2025-07-23 12:27:46,686 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:27:46,885 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 12:27:46,893 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:27:46,915 - DataLogger - WARNING - High tick latency for EURUSD: 60.00ms
+2025-07-23 12:27:46,922 - DataLogger - WARNING - High tick latency for USDJPY: 82.00ms
+2025-07-23 12:27:47,278 - DataLogger - WARNING - High tick latency for GBPUSD: 43.00ms
+2025-07-23 12:27:47,288 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 12:27:47,482 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:27:47,491 - DataLogger - WARNING - High tick latency for GBPUSD: 54.00ms
+2025-07-23 12:27:47,499 - DataLogger - WARNING - High tick latency for AUDUSD: 61.00ms
+2025-07-23 12:27:47,690 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-23 12:27:47,698 - DataLogger - WARNING - High tick latency for GBPUSD: 61.00ms
+2025-07-23 12:27:47,719 - DataLogger - WARNING - High tick latency for EURUSD: 81.00ms
+2025-07-23 12:27:48,319 - DataLogger - WARNING - High tick latency for USDJPY: 69.00ms
+2025-07-23 12:27:48,884 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:27:49,884 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:27:50,677 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:27:51,279 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:27:51,686 - DataLogger - WARNING - High tick latency for EURUSD: 49.00ms
+2025-07-23 12:27:51,691 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:27:52,281 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:27:52,289 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:27:52,297 - DataLogger - WARNING - High tick latency for AUDUSD: 59.00ms
+2025-07-23 12:27:52,691 - DataLogger - WARNING - High tick latency for GBPUSD: 54.00ms
+2025-07-23 12:27:52,713 - DataLogger - WARNING - High tick latency for AUDUSD: 76.00ms
+2025-07-23 12:27:53,486 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-23 12:27:54,287 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:27:55,281 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:27:56,288 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 12:27:56,884 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:27:57,286 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:27:57,291 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:27:57,484 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:27:58,280 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 12:27:58,883 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 12:27:58,889 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 12:27:58,893 - DataLogger - WARNING - High tick latency for GBPUSD: 51.00ms
+2025-07-23 12:27:59,279 - DataLogger - WARNING - High tick latency for AUDUSD: 42.00ms
+2025-07-23 12:27:59,284 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:27:59,482 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:27:59,488 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 12:27:59,493 - DataLogger - WARNING - High tick latency for GBPUSD: 56.00ms
+2025-07-23 12:27:59,676 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:28:00,282 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:00,488 - DataLogger - WARNING - High tick latency for AUDUSD: 48.00ms
+2025-07-23 12:28:00,493 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:28:00,524 - DataLogger - WARNING - High tick latency for GBPUSD: 79.00ms
+2025-07-23 12:28:00,529 - DataLogger - WARNING - High tick latency for EURUSD: 85.00ms
+2025-07-23 12:28:00,699 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:28:00,719 - DataLogger - WARNING - High tick latency for EURUSD: 65.00ms
+2025-07-23 12:28:00,891 - DataLogger - WARNING - High tick latency for EURUSD: 52.00ms
+2025-07-23 12:28:00,895 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-23 12:28:01,495 - DataLogger - WARNING - High tick latency for GBPUSD: 56.00ms
+2025-07-23 12:28:01,514 - DataLogger - WARNING - High tick latency for EURUSD: 59.00ms
+2025-07-23 12:28:01,685 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 12:28:01,694 - DataLogger - WARNING - High tick latency for AUDUSD: 55.00ms
+2025-07-23 12:28:01,886 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:01,892 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:28:01,897 - DataLogger - WARNING - High tick latency for EURUSD: 57.00ms
+2025-07-23 12:28:01,914 - DataLogger - WARNING - High tick latency for AUDUSD: 66.00ms
+2025-07-23 12:28:02,287 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 12:28:02,292 - DataLogger - WARNING - High tick latency for GBPUSD: 54.00ms
+2025-07-23 12:28:02,295 - DataLogger - WARNING - High tick latency for AUDUSD: 57.00ms
+2025-07-23 12:28:03,084 - DataLogger - WARNING - High tick latency for GBPUSD: 45.00ms
+2025-07-23 12:28:03,286 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:28:03,480 - DataLogger - WARNING - High tick latency for AUDUSD: 43.00ms
+2025-07-23 12:28:04,284 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:28:04,288 - DataLogger - WARNING - High tick latency for EURUSD: 49.00ms
+2025-07-23 12:28:05,313 - DataLogger - WARNING - High tick latency for GBPUSD: 59.00ms
+2025-07-23 12:28:05,321 - DataLogger - WARNING - High tick latency for USDJPY: 81.00ms
+2025-07-23 12:28:05,326 - DataLogger - WARNING - High tick latency for AUDUSD: 85.00ms
+2025-07-23 12:28:05,500 - DataLogger - WARNING - High tick latency for AUDUSD: 54.00ms
+2025-07-23 12:28:06,886 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:07,086 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:28:07,480 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:28:08,481 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-23 12:28:08,883 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:28:09,285 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:09,290 - DataLogger - WARNING - High tick latency for EURUSD: 51.00ms
+2025-07-23 12:28:10,479 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:28:10,494 - DataCollector - INFO - === System Status ===
+2025-07-23 12:28:10,496 - DataCollector - INFO - OpenAPI: Connected
+2025-07-23 12:28:10,497 - DataCollector - INFO - FIX: Connected
+2025-07-23 12:28:10,498 - DataCollector - INFO - Active Positions: 0
+2025-07-23 12:28:10,499 - DataCollector - INFO - Ready Symbols: 4/4
+2025-07-23 12:28:10,513 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 12:28:10,514 - DataCollector - INFO - ====================
+2025-07-23 12:28:10,517 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.7 minutes
+Ticks Processed: 125
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.99ms
+  95th Percentile: 16.36ms
+  Min/Max: 1.14ms / 18.40ms
+  Sample Count: 125
+
+Depth Processing Latencies:
+  Average: 1.00ms
+  95th Percentile: 1.76ms
+  Min/Max: 0.03ms / 16.46ms
+  Sample Count: 253
+
+============================================================
+2025-07-23 12:28:10,519 - DataLogger - INFO - ================================================================================
+2025-07-23 12:28:10,524 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:28:10,525 - DataLogger - INFO - ================================================================================
+2025-07-23 12:28:10,527 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:28:10,528 - DataLogger - INFO -   TICK DATA (24 updates):
+2025-07-23 12:28:10,529 - DataLogger - INFO -     Average: 376.83ms
+2025-07-23 12:28:10,531 - DataLogger - INFO -     Min/Max: 43.00ms / 7810.00ms
+2025-07-23 12:28:10,532 - DataLogger - INFO -     P50/P95/P99: 51.00ms / 81.00ms / 85.00ms
+2025-07-23 12:28:10,533 - DataLogger - INFO -   DOM DATA (46 updates):
+2025-07-23 12:28:10,534 - DataLogger - INFO -     Average: 0.04ms
+2025-07-23 12:28:10,536 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:10,537 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 1.00ms
+2025-07-23 12:28:10,538 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:28:10,539 - DataLogger - INFO -   TICK DATA (29 updates):
+2025-07-23 12:28:10,540 - DataLogger - INFO -     Average: 118.72ms
+2025-07-23 12:28:10,541 - DataLogger - INFO -     Min/Max: 43.00ms / 2010.00ms
+2025-07-23 12:28:10,542 - DataLogger - INFO -     P50/P95/P99: 51.00ms / 63.00ms / 79.00ms
+2025-07-23 12:28:10,543 - DataLogger - INFO -   DOM DATA (61 updates):
+2025-07-23 12:28:10,544 - DataLogger - INFO -     Average: 0.08ms
+2025-07-23 12:28:10,545 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:10,546 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:28:10,547 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:28:10,548 - DataLogger - INFO -   TICK DATA (44 updates):
+2025-07-23 12:28:10,549 - DataLogger - INFO -     Average: 53.55ms
+2025-07-23 12:28:10,551 - DataLogger - INFO -     Min/Max: 42.00ms / 212.00ms
+2025-07-23 12:28:10,552 - DataLogger - INFO -     P50/P95/P99: 46.00ms / 69.00ms / 82.00ms
+2025-07-23 12:28:10,553 - DataLogger - INFO -   DOM DATA (86 updates):
+2025-07-23 12:28:10,553 - DataLogger - INFO -     Average: 0.12ms
+2025-07-23 12:28:10,554 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:10,556 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:28:10,557 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:28:10,558 - DataLogger - INFO -   TICK DATA (28 updates):
+2025-07-23 12:28:10,559 - DataLogger - INFO -     Average: 60.54ms
+2025-07-23 12:28:10,560 - DataLogger - INFO -     Min/Max: 42.00ms / 206.00ms
+2025-07-23 12:28:10,561 - DataLogger - INFO -     P50/P95/P99: 52.00ms / 76.00ms / 85.00ms
+2025-07-23 12:28:10,562 - DataLogger - INFO -   DOM DATA (60 updates):
+2025-07-23 12:28:10,563 - DataLogger - INFO -     Average: 0.05ms
+2025-07-23 12:28:10,564 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:10,566 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 1.00ms
+2025-07-23 12:28:10,567 - DataLogger - INFO - ================================================================================
+2025-07-23 12:28:10,568 - DataCollector - INFO - DATA RATES:
+2025-07-23 12:28:10,569 - DataCollector - INFO -   EURUSD: Tick=0.6/s, DOM=1.1/s
+2025-07-23 12:28:10,570 - DataCollector - INFO -   GBPUSD: Tick=0.7/s, DOM=1.5/s
+2025-07-23 12:28:10,571 - DataCollector - INFO -   USDJPY: Tick=1.1/s, DOM=2.1/s
+2025-07-23 12:28:10,572 - DataCollector - INFO -   AUDUSD: Tick=0.7/s, DOM=1.5/s
+2025-07-23 12:28:10,677 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:11,482 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:28:12,281 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:12,479 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:13,495 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-23 12:28:13,518 - DataLogger - WARNING - High tick latency for GBPUSD: 75.00ms
+2025-07-23 12:28:15,364 - DataLogger - WARNING - High tick latency for EURUSD: 117.00ms
+2025-07-23 12:28:16,887 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 12:28:16,899 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-23 12:28:16,918 - DataLogger - WARNING - High tick latency for AUDUSD: 69.00ms
+2025-07-23 12:28:17,294 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 12:28:18,299 - DataLogger - WARNING - High tick latency for GBPUSD: 60.00ms
+2025-07-23 12:28:18,321 - DataLogger - WARNING - High tick latency for EURUSD: 73.00ms
+2025-07-23 12:28:18,689 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 12:28:18,881 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 12:28:18,886 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 12:28:19,289 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:19,884 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:20,695 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:20,886 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:28:21,491 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:28:21,688 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:28:21,887 - DataLogger - WARNING - High tick latency for AUDUSD: 43.00ms
+2025-07-23 12:28:22,282 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:23,279 - DataLogger - WARNING - High tick latency for GBPUSD: 42.00ms
+2025-07-23 12:28:24,124 - DataLogger - WARNING - High tick latency for GBPUSD: 86.00ms
+2025-07-23 12:28:24,481 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:24,689 - DataLogger - WARNING - High tick latency for EURUSD: 53.00ms
+2025-07-23 12:28:24,881 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:25,296 - DataLogger - WARNING - High tick latency for USDJPY: 58.00ms
+2025-07-23 12:28:25,482 - DataLogger - WARNING - High tick latency for GBPUSD: 43.00ms
+2025-07-23 12:28:26,281 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:26,688 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 12:28:27,285 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:28:27,683 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:27,883 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:28,286 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:29,281 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:30,281 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:28:31,295 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 12:28:31,315 - DataLogger - WARNING - High tick latency for USDJPY: 64.00ms
+2025-07-23 12:28:31,491 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:31,497 - DataLogger - WARNING - High tick latency for AUDUSD: 49.00ms
+2025-07-23 12:28:31,891 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-23 12:28:32,315 - DataLogger - WARNING - High tick latency for AUDUSD: 70.00ms
+2025-07-23 12:28:32,883 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 12:28:33,043 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:28:33,285 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:28:33,291 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:28:34,086 - DataLogger - WARNING - High tick latency for EURUSD: 47.00ms
+2025-07-23 12:28:34,282 - DataLogger - WARNING - High tick latency for AUDUSD: 43.00ms
+2025-07-23 12:28:35,081 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:28:35,295 - DataLogger - WARNING - High tick latency for GBPUSD: 53.00ms
+2025-07-23 12:28:36,084 - DataLogger - WARNING - High tick latency for GBPUSD: 43.00ms
+2025-07-23 12:28:36,281 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:28:36,287 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 12:28:36,292 - DataLogger - WARNING - High tick latency for GBPUSD: 56.00ms
+2025-07-23 12:28:36,297 - DataLogger - WARNING - High tick latency for AUDUSD: 53.00ms
+2025-07-23 12:28:36,883 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 12:28:37,048 - DataLogger - WARNING - High tick latency for AUDUSD: 48.00ms
+2025-07-23 12:28:37,287 - DataLogger - WARNING - High tick latency for EURUSD: 54.00ms
+2025-07-23 12:28:37,294 - DataLogger - WARNING - High tick latency for AUDUSD: 49.00ms
+2025-07-23 12:28:37,493 - DataLogger - WARNING - High tick latency for GBPUSD: 49.00ms
+2025-07-23 12:28:37,499 - DataLogger - WARNING - High tick latency for USDJPY: 55.00ms
+2025-07-23 12:28:37,518 - DataLogger - WARNING - High tick latency for AUDUSD: 74.00ms
+2025-07-23 12:28:37,691 - DataLogger - WARNING - High tick latency for EURUSD: 54.00ms
+2025-07-23 12:28:37,696 - DataLogger - WARNING - High tick latency for USDJPY: 59.00ms
+2025-07-23 12:28:37,886 - DataLogger - WARNING - High tick latency for AUDUSD: 47.00ms
+2025-07-23 12:28:38,287 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:28:38,291 - DataLogger - WARNING - High tick latency for AUDUSD: 52.00ms
+2025-07-23 12:28:38,518 - DataLogger - WARNING - High tick latency for USDJPY: 77.00ms
+2025-07-23 12:28:38,524 - DataLogger - WARNING - High tick latency for AUDUSD: 83.00ms
+2025-07-23 12:28:38,682 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:28:39,281 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:28:39,286 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 12:28:39,291 - DataLogger - WARNING - High tick latency for AUDUSD: 50.00ms
+2025-07-23 12:28:39,299 - DataLogger - WARNING - High tick latency for EURUSD: 58.00ms
+2025-07-23 12:28:39,497 - DataLogger - WARNING - High tick latency for GBPUSD: 45.00ms
+2025-07-23 12:28:39,519 - DataLogger - WARNING - High tick latency for AUDUSD: 67.00ms
+2025-07-23 12:28:40,294 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:40,316 - DataLogger - WARNING - High tick latency for AUDUSD: 52.00ms
+2025-07-23 12:28:40,496 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:28:40,516 - DataLogger - WARNING - High tick latency for EURUSD: 68.00ms
+2025-07-23 12:28:40,521 - DataLogger - WARNING - High tick latency for GBPUSD: 75.00ms
+2025-07-23 12:28:40,574 - DataCollector - INFO - === System Status ===
+2025-07-23 12:28:40,576 - DataCollector - INFO - OpenAPI: Connected
+2025-07-23 12:28:40,577 - DataCollector - INFO - FIX: Connected
+2025-07-23 12:28:40,579 - DataCollector - INFO - Active Positions: 0
+2025-07-23 12:28:40,580 - DataCollector - INFO - Ready Symbols: 4/4
+2025-07-23 12:28:40,581 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 12:28:40,582 - DataCollector - INFO - ====================
+2025-07-23 12:28:40,585 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 1.2 minutes
+Ticks Processed: 209
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.68ms
+  95th Percentile: 15.51ms
+  Min/Max: 1.14ms / 18.40ms
+  Sample Count: 209
+
+Depth Processing Latencies:
+  Average: 1.03ms
+  95th Percentile: 1.63ms
+  Min/Max: 0.03ms / 20.17ms
+  Sample Count: 461
+
+============================================================
+2025-07-23 12:28:40,587 - DataLogger - INFO - ================================================================================
+2025-07-23 12:28:40,588 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:28:40,589 - DataLogger - INFO - ================================================================================
+2025-07-23 12:28:40,591 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:28:40,592 - DataLogger - INFO -   TICK DATA (41 updates):
+2025-07-23 12:28:40,592 - DataLogger - INFO -     Average: 243.41ms
+2025-07-23 12:28:40,593 - DataLogger - INFO -     Min/Max: 43.00ms / 7810.00ms
+2025-07-23 12:28:40,594 - DataLogger - INFO -     P50/P95/P99: 50.00ms / 85.00ms / 117.00ms
+2025-07-23 12:28:40,596 - DataLogger - INFO -   DOM DATA (91 updates):
+2025-07-23 12:28:40,597 - DataLogger - INFO -     Average: 0.08ms
+2025-07-23 12:28:40,598 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:40,599 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:28:40,600 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:28:40,616 - DataLogger - INFO -   TICK DATA (45 updates):
+2025-07-23 12:28:40,618 - DataLogger - INFO -     Average: 95.78ms
+2025-07-23 12:28:40,619 - DataLogger - INFO -     Min/Max: 42.00ms / 2010.00ms
+2025-07-23 12:28:40,620 - DataLogger - INFO -     P50/P95/P99: 50.00ms / 75.00ms / 86.00ms
+2025-07-23 12:28:40,621 - DataLogger - INFO -   DOM DATA (105 updates):
+2025-07-23 12:28:40,623 - DataLogger - INFO -     Average: 0.10ms
+2025-07-23 12:28:40,624 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:40,625 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:28:40,626 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:28:40,627 - DataLogger - INFO -   TICK DATA (78 updates):
+2025-07-23 12:28:40,628 - DataLogger - INFO -     Average: 51.27ms
+2025-07-23 12:28:40,630 - DataLogger - INFO -     Min/Max: 42.00ms / 212.00ms
+2025-07-23 12:28:40,631 - DataLogger - INFO -     P50/P95/P99: 46.00ms / 69.00ms / 82.00ms
+2025-07-23 12:28:40,633 - DataLogger - INFO -   DOM DATA (156 updates):
+2025-07-23 12:28:40,634 - DataLogger - INFO -     Average: 0.10ms
+2025-07-23 12:28:40,635 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:40,636 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:28:40,638 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:28:40,639 - DataLogger - INFO -   TICK DATA (45 updates):
+2025-07-23 12:28:40,641 - DataLogger - INFO -     Average: 58.49ms
+2025-07-23 12:28:40,642 - DataLogger - INFO -     Min/Max: 42.00ms / 206.00ms
+2025-07-23 12:28:40,643 - DataLogger - INFO -     P50/P95/P99: 52.00ms / 76.00ms / 85.00ms
+2025-07-23 12:28:40,644 - DataLogger - INFO -   DOM DATA (109 updates):
+2025-07-23 12:28:40,646 - DataLogger - INFO -     Average: 0.09ms
+2025-07-23 12:28:40,647 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:28:40,648 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:28:40,649 - DataLogger - INFO - ================================================================================
+2025-07-23 12:28:40,651 - DataCollector - INFO - DATA RATES:
+2025-07-23 12:28:40,652 - DataCollector - INFO -   EURUSD: Tick=0.6/s, DOM=1.3/s
+2025-07-23 12:28:40,653 - DataCollector - INFO -   GBPUSD: Tick=0.6/s, DOM=1.5/s
+2025-07-23 12:28:40,654 - DataCollector - INFO -   USDJPY: Tick=1.1/s, DOM=2.2/s
+2025-07-23 12:28:40,655 - DataCollector - INFO -   AUDUSD: Tick=0.6/s, DOM=1.5/s
+2025-07-23 12:28:40,686 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 12:28:40,696 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:28:40,717 - DataLogger - WARNING - High tick latency for AUDUSD: 68.00ms
+2025-07-23 12:28:40,722 - DataLogger - WARNING - High tick latency for EURUSD: 73.00ms
+2025-07-23 12:28:40,887 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:28:41,286 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:28:41,292 - DataLogger - WARNING - High tick latency for EURUSD: 54.00ms
+2025-07-23 12:28:41,490 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-23 12:28:41,913 - DataLogger - WARNING - High tick latency for USDJPY: 64.00ms
+2025-07-23 12:28:41,918 - DataLogger - WARNING - High tick latency for EURUSD: 82.00ms
+2025-07-23 12:28:42,281 - DataLogger - WARNING - High tick latency for GBPUSD: 45.00ms
+2025-07-23 12:28:43,291 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:28:43,298 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:28:43,484 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:43,882 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:28:44,315 - DataLogger - WARNING - High tick latency for USDJPY: 75.00ms
+2025-07-23 12:28:44,887 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:28:45,288 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 12:28:45,477 - DataLogger - WARNING - High tick latency for AUDUSD: 43.00ms
+2025-07-23 12:28:45,486 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:45,490 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-23 12:28:45,494 - DataLogger - WARNING - High tick latency for GBPUSD: 54.00ms
+2025-07-23 12:28:45,684 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:45,689 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 12:28:45,693 - DataLogger - WARNING - High tick latency for GBPUSD: 51.00ms
+2025-07-23 12:28:45,881 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:28:45,886 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:46,044 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:28:46,284 - DataLogger - WARNING - High tick latency for AUDUSD: 47.00ms
+2025-07-23 12:28:46,289 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:28:46,294 - DataLogger - WARNING - High tick latency for USDJPY: 56.00ms
+2025-07-23 12:28:46,485 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:28:46,491 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:46,496 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-23 12:28:46,683 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-23 12:28:46,688 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:28:46,887 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:28:47,081 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:47,281 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:47,287 - DataLogger - WARNING - High tick latency for AUDUSD: 48.00ms
+2025-07-23 12:28:47,292 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:28:47,493 - DataLogger - WARNING - High tick latency for AUDUSD: 56.00ms
+2025-07-23 12:28:48,293 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 12:28:49,283 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:28:49,288 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 12:28:49,683 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:28:50,282 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:28:51,278 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:28:52,085 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:52,091 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-23 12:28:52,097 - DataLogger - WARNING - High tick latency for GBPUSD: 55.00ms
+2025-07-23 12:28:52,288 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 12:28:52,297 - DataLogger - WARNING - High tick latency for AUDUSD: 58.00ms
+2025-07-23 12:28:52,318 - DataLogger - WARNING - High tick latency for USDJPY: 79.00ms
+2025-07-23 12:28:52,694 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:28:52,700 - DataLogger - WARNING - High tick latency for GBPUSD: 53.00ms
+2025-07-23 12:28:52,892 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:53,276 - DataLogger - WARNING - High tick latency for GBPUSD: 43.00ms
+2025-07-23 12:28:53,281 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:28:53,481 - DataLogger - WARNING - High tick latency for GBPUSD: 45.00ms
+2025-07-23 12:28:53,496 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-23 12:28:53,513 - DataLogger - WARNING - High tick latency for USDJPY: 55.00ms
+2025-07-23 12:28:53,891 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:28:54,079 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:28:54,288 - DataLogger - WARNING - High tick latency for GBPUSD: 49.00ms
+2025-07-23 12:28:54,689 - DataLogger - WARNING - High tick latency for EURUSD: 47.00ms
+2025-07-23 12:28:54,881 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:28:55,281 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:28:57,327 - DataLogger - WARNING - High tick latency for USDJPY: 76.00ms
+2025-07-23 12:28:57,483 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-23 12:28:57,681 - DataLogger - WARNING - High tick latency for AUDUSD: 43.00ms
+2025-07-23 12:28:59,279 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:29:00,883 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:29:01,287 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-23 12:29:01,297 - DataLogger - WARNING - High tick latency for GBPUSD: 53.00ms
+2025-07-23 12:29:01,887 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:29:03,681 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:29:03,891 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:29:04,887 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:29:04,914 - DataLogger - WARNING - High tick latency for AUDUSD: 60.00ms
+2025-07-23 12:29:05,285 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:29:05,294 - DataLogger - WARNING - High tick latency for USDJPY: 56.00ms
+2025-07-23 12:29:05,482 - DataLogger - WARNING - High tick latency for AUDUSD: 43.00ms
+2025-07-23 12:29:05,487 - DataLogger - WARNING - High tick latency for EURUSD: 49.00ms
+2025-07-23 12:29:05,493 - DataLogger - WARNING - High tick latency for GBPUSD: 55.00ms
+2025-07-23 12:29:06,487 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:29:07,296 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:29:07,483 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:29:08,082 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:29:10,281 - DataLogger - WARNING - High tick latency for EURUSD: 42.00ms
+2025-07-23 12:29:10,657 - DataCollector - INFO - === System Status ===
+2025-07-23 12:29:10,659 - DataCollector - INFO - OpenAPI: Connected
+2025-07-23 12:29:10,661 - DataCollector - INFO - FIX: Connected
+2025-07-23 12:29:10,662 - DataCollector - INFO - Active Positions: 0
+2025-07-23 12:29:10,663 - DataCollector - INFO - Ready Symbols: 4/4
+2025-07-23 12:29:10,664 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 12:29:10,666 - DataCollector - INFO - ====================
+2025-07-23 12:29:10,671 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 1.7 minutes
+Ticks Processed: 299
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.48ms
+  95th Percentile: 15.32ms
+  Min/Max: 1.11ms / 18.40ms
+  Sample Count: 299
+
+Depth Processing Latencies:
+  Average: 0.99ms
+  95th Percentile: 1.57ms
+  Min/Max: 0.03ms / 20.17ms
+  Sample Count: 672
+
+============================================================
+2025-07-23 12:29:10,673 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:10,675 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:29:10,676 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:10,678 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:29:10,679 - DataLogger - INFO -   TICK DATA (58 updates):
+2025-07-23 12:29:10,681 - DataLogger - INFO -     Average: 186.88ms
+2025-07-23 12:29:10,682 - DataLogger - INFO -     Min/Max: 42.00ms / 7810.00ms
+2025-07-23 12:29:10,684 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 82.00ms / 117.00ms
+2025-07-23 12:29:10,685 - DataLogger - INFO -   DOM DATA (127 updates):
+2025-07-23 12:29:10,687 - DataLogger - INFO -     Average: 0.07ms
+2025-07-23 12:29:10,688 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:10,689 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:10,691 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:29:10,692 - DataLogger - INFO -   TICK DATA (66 updates):
+2025-07-23 12:29:10,694 - DataLogger - INFO -     Average: 80.94ms
+2025-07-23 12:29:10,695 - DataLogger - INFO -     Min/Max: 42.00ms / 2010.00ms
+2025-07-23 12:29:10,696 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 75.00ms / 86.00ms
+2025-07-23 12:29:10,698 - DataLogger - INFO -   DOM DATA (153 updates):
+2025-07-23 12:29:10,699 - DataLogger - INFO -     Average: 0.10ms
+2025-07-23 12:29:10,700 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:10,714 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:10,715 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:29:10,717 - DataLogger - INFO -   TICK DATA (118 updates):
+2025-07-23 12:29:10,718 - DataLogger - INFO -     Average: 50.67ms
+2025-07-23 12:29:10,719 - DataLogger - INFO -     Min/Max: 42.00ms / 212.00ms
+2025-07-23 12:29:10,721 - DataLogger - INFO -     P50/P95/P99: 46.00ms / 75.00ms / 81.00ms
+2025-07-23 12:29:10,722 - DataLogger - INFO -   DOM DATA (240 updates):
+2025-07-23 12:29:10,723 - DataLogger - INFO -     Average: 0.09ms
+2025-07-23 12:29:10,724 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:10,726 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:10,727 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:29:10,728 - DataLogger - INFO -   TICK DATA (57 updates):
+2025-07-23 12:29:10,729 - DataLogger - INFO -     Average: 56.75ms
+2025-07-23 12:29:10,731 - DataLogger - INFO -     Min/Max: 42.00ms / 206.00ms
+2025-07-23 12:29:10,732 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 76.00ms / 85.00ms
+2025-07-23 12:29:10,733 - DataLogger - INFO -   DOM DATA (152 updates):
+2025-07-23 12:29:10,735 - DataLogger - INFO -     Average: 0.09ms
+2025-07-23 12:29:10,736 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:10,738 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:10,739 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:10,741 - DataCollector - INFO - DATA RATES:
+2025-07-23 12:29:10,742 - DataCollector - INFO -   EURUSD: Tick=0.6/s, DOM=1.3/s
+2025-07-23 12:29:10,744 - DataCollector - INFO -   GBPUSD: Tick=0.7/s, DOM=1.5/s
+2025-07-23 12:29:10,747 - DataCollector - INFO -   USDJPY: Tick=1.2/s, DOM=2.4/s
+2025-07-23 12:29:10,748 - DataCollector - INFO -   AUDUSD: Tick=0.6/s, DOM=1.5/s
+2025-07-23 12:29:10,891 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:29:11,290 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:29:12,480 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:13,081 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:29:13,278 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:13,882 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:29:14,282 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:29:14,290 - DataLogger - WARNING - High tick latency for GBPUSD: 48.00ms
+2025-07-23 12:29:14,886 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 12:29:15,284 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:29:15,291 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 12:29:15,481 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:29:16,480 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:16,883 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:29:17,044 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:17,687 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:29:18,485 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:18,879 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:19,284 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:29:19,290 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 12:29:19,295 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-23 12:29:19,479 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:19,486 - DataLogger - WARNING - High tick latency for GBPUSD: 48.00ms
+2025-07-23 12:29:19,882 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:29:20,281 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:29:20,293 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 12:29:21,691 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:29:22,278 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:29:22,283 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 12:29:22,288 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:29:22,293 - DataLogger - WARNING - High tick latency for AUDUSD: 53.00ms
+2025-07-23 12:29:22,481 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:29:22,486 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:29:22,491 - DataLogger - WARNING - High tick latency for AUDUSD: 52.00ms
+2025-07-23 12:29:22,894 - DataLogger - WARNING - High tick latency for GBPUSD: 49.00ms
+2025-07-23 12:29:24,683 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:29:25,681 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:29:26,483 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 12:29:26,489 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:29:26,493 - DataLogger - WARNING - High tick latency for AUDUSD: 50.00ms
+2025-07-23 12:29:26,497 - DataLogger - WARNING - High tick latency for GBPUSD: 53.00ms
+2025-07-23 12:29:26,692 - DataLogger - WARNING - High tick latency for EURUSD: 52.00ms
+2025-07-23 12:29:26,885 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:29:26,891 - DataLogger - WARNING - High tick latency for EURUSD: 51.00ms
+2025-07-23 12:29:27,277 - main - INFO - Shutdown signal received. Stopping system...
+2025-07-23 12:29:27,280 - DataCollector - INFO - Stopping data collector...
+2025-07-23 12:29:27,282 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:27,283 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:29:27,284 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:27,286 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:29:27,287 - DataLogger - INFO -   TICK DATA (64 updates):
+2025-07-23 12:29:27,288 - DataLogger - INFO -     Average: 173.80ms
+2025-07-23 12:29:27,294 - DataLogger - INFO -     Min/Max: 42.00ms / 7810.00ms
+2025-07-23 12:29:27,295 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 81.00ms / 117.00ms
+2025-07-23 12:29:27,296 - DataLogger - INFO -   DOM DATA (145 updates):
+2025-07-23 12:29:27,297 - DataLogger - INFO -     Average: 0.10ms
+2025-07-23 12:29:27,298 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,300 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,314 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:29:27,315 - DataLogger - INFO -   TICK DATA (77 updates):
+2025-07-23 12:29:27,317 - DataLogger - INFO -     Average: 76.12ms
+2025-07-23 12:29:27,318 - DataLogger - INFO -     Min/Max: 42.00ms / 2010.00ms
+2025-07-23 12:29:27,319 - DataLogger - INFO -     P50/P95/P99: 48.00ms / 75.00ms / 86.00ms
+2025-07-23 12:29:27,320 - DataLogger - INFO -   DOM DATA (176 updates):
+2025-07-23 12:29:27,321 - DataLogger - INFO -     Average: 0.10ms
+2025-07-23 12:29:27,322 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,323 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,324 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:29:27,326 - DataLogger - INFO -   TICK DATA (140 updates):
+2025-07-23 12:29:27,327 - DataLogger - INFO -     Average: 49.83ms
+2025-07-23 12:29:27,328 - DataLogger - INFO -     Min/Max: 42.00ms / 212.00ms
+2025-07-23 12:29:27,329 - DataLogger - INFO -     P50/P95/P99: 45.00ms / 69.00ms / 81.00ms
+2025-07-23 12:29:27,330 - DataLogger - INFO -   DOM DATA (278 updates):
+2025-07-23 12:29:27,331 - DataLogger - INFO -     Average: 0.09ms
+2025-07-23 12:29:27,335 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,338 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,339 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:29:27,340 - DataLogger - INFO -   TICK DATA (62 updates):
+2025-07-23 12:29:27,341 - DataLogger - INFO -     Average: 56.15ms
+2025-07-23 12:29:27,342 - DataLogger - INFO -     Min/Max: 42.00ms / 206.00ms
+2025-07-23 12:29:27,343 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 76.00ms / 85.00ms
+2025-07-23 12:29:27,344 - DataLogger - INFO -   DOM DATA (178 updates):
+2025-07-23 12:29:27,346 - DataLogger - INFO -     Average: 0.08ms
+2025-07-23 12:29:27,347 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,348 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,349 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:27,351 - DataLogger - INFO - All data log files closed
+2025-07-23 12:29:27,370 - DataCollector - WARNING - FIX disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-23 12:29:27,374 - DataCollector - WARNING - OpenAPI disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-23 12:29:27,376 - main - INFO - Generating final performance report...
+2025-07-23 12:29:27,378 - main - INFO - FINAL SYSTEM STATUS:
+2025-07-23 12:29:27,379 - main - INFO -   Performance: No trades completed yet
+2025-07-23 12:29:27,385 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 2.0 minutes
+Ticks Processed: 343
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.34ms
+  95th Percentile: 14.02ms
+  Min/Max: 1.11ms / 18.40ms
+  Sample Count: 343
+
+Depth Processing Latencies:
+  Average: 0.97ms
+  95th Percentile: 1.49ms
+  Min/Max: 0.03ms / 20.17ms
+  Sample Count: 777
+
+============================================================
+2025-07-23 12:29:27,386 - TradingClient - INFO - TradingClient Status:
+2025-07-23 12:29:27,387 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 12:29:27,388 - TradingClient - INFO -   No trades completed yet
+2025-07-23 12:29:27,390 - TradingClient - INFO -   Session Time: 2.0 minutes
+2025-07-23 12:29:27,391 - DataCollector - INFO - Stopping data collector...
+2025-07-23 12:29:27,393 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:27,394 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:29:27,396 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:27,397 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:29:27,398 - DataLogger - INFO -   TICK DATA (64 updates):
+2025-07-23 12:29:27,398 - DataLogger - INFO -     Average: 173.80ms
+2025-07-23 12:29:27,399 - DataLogger - INFO -     Min/Max: 42.00ms / 7810.00ms
+2025-07-23 12:29:27,414 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 81.00ms / 117.00ms
+2025-07-23 12:29:27,416 - DataLogger - INFO -   DOM DATA (145 updates):
+2025-07-23 12:29:27,417 - DataLogger - INFO -     Average: 0.10ms
+2025-07-23 12:29:27,418 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,419 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,421 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:29:27,422 - DataLogger - INFO -   TICK DATA (77 updates):
+2025-07-23 12:29:27,423 - DataLogger - INFO -     Average: 76.12ms
+2025-07-23 12:29:27,423 - DataLogger - INFO -     Min/Max: 42.00ms / 2010.00ms
+2025-07-23 12:29:27,424 - DataLogger - INFO -     P50/P95/P99: 48.00ms / 75.00ms / 86.00ms
+2025-07-23 12:29:27,426 - DataLogger - INFO -   DOM DATA (176 updates):
+2025-07-23 12:29:27,427 - DataLogger - INFO -     Average: 0.10ms
+2025-07-23 12:29:27,428 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,429 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,430 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:29:27,431 - DataLogger - INFO -   TICK DATA (140 updates):
+2025-07-23 12:29:27,432 - DataLogger - INFO -     Average: 49.83ms
+2025-07-23 12:29:27,433 - DataLogger - INFO -     Min/Max: 42.00ms / 212.00ms
+2025-07-23 12:29:27,434 - DataLogger - INFO -     P50/P95/P99: 45.00ms / 69.00ms / 81.00ms
+2025-07-23 12:29:27,436 - DataLogger - INFO -   DOM DATA (278 updates):
+2025-07-23 12:29:27,437 - DataLogger - INFO -     Average: 0.09ms
+2025-07-23 12:29:27,438 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,439 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,440 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:29:27,442 - DataLogger - INFO -   TICK DATA (62 updates):
+2025-07-23 12:29:27,443 - DataLogger - INFO -     Average: 56.15ms
+2025-07-23 12:29:27,444 - DataLogger - INFO -     Min/Max: 42.00ms / 206.00ms
+2025-07-23 12:29:27,445 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 76.00ms / 85.00ms
+2025-07-23 12:29:27,446 - DataLogger - INFO -   DOM DATA (178 updates):
+2025-07-23 12:29:27,447 - DataLogger - INFO -     Average: 0.08ms
+2025-07-23 12:29:27,448 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:29:27,449 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:29:27,451 - DataLogger - INFO - ================================================================================
+2025-07-23 12:29:27,452 - DataLogger - INFO - All data log files closed
+2025-07-23 12:29:27,453 - main - INFO - ============================================================
+2025-07-23 12:29:27,455 - main - INFO - HFT BASE LITE - SHUTDOWN COMPLETE
+2025-07-23 12:29:27,456 - main - INFO - ============================================================
+2025-07-23 12:55:10,363 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 12:55:10,371 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250723.log, dom=dom_data_eurusd_20250723.log
+2025-07-23 12:55:10,374 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250723.log, dom=dom_data_gbpusd_20250723.log
+2025-07-23 12:55:10,378 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250723.log, dom=dom_data_usdjpy_20250723.log
+2025-07-23 12:55:10,382 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250723.log, dom=dom_data_audusd_20250723.log
+2025-07-23 12:55:10,383 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-23 12:55:10,391 - main - INFO - ============================================================
+2025-07-23 12:55:10,392 - main - INFO - HFT BASE LITE - STARTING
+2025-07-23 12:55:10,393 - main - INFO - ============================================================
+2025-07-23 12:55:10,394 - main - INFO - Active Symbols: 4
+2025-07-23 12:55:10,396 - main - INFO -   1: EURUSD
+2025-07-23 12:55:10,396 - main - INFO -   2: GBPUSD
+2025-07-23 12:55:10,397 - main - INFO -   4: USDJPY
+2025-07-23 12:55:10,398 - main - INFO -   5: AUDUSD
+2025-07-23 12:55:10,399 - main - INFO - Session Duration: 60 minutes
+2025-07-23 12:55:10,420 - main - INFO - ============================================================
+2025-07-23 12:55:10,424 - main - INFO - Initializing DataCollector...
+2025-07-23 12:55:10,427 - TickClient_EURUSD - INFO - TickClient initialized for EURUSD
+2025-07-23 12:55:10,428 - DepthClient_EURUSD - INFO - DepthClient initialized for EURUSD
+2025-07-23 12:55:10,429 - TickClient_GBPUSD - INFO - TickClient initialized for GBPUSD
+2025-07-23 12:55:10,431 - DepthClient_GBPUSD - INFO - DepthClient initialized for GBPUSD
+2025-07-23 12:55:10,432 - TickClient_USDJPY - INFO - TickClient initialized for USDJPY
+2025-07-23 12:55:10,433 - DepthClient_USDJPY - INFO - DepthClient initialized for USDJPY
+2025-07-23 12:55:10,433 - TickClient_AUDUSD - INFO - TickClient initialized for AUDUSD
+2025-07-23 12:55:10,434 - DepthClient_AUDUSD - INFO - DepthClient initialized for AUDUSD
+2025-07-23 12:55:10,436 - TradingClient - INFO - TradingClient initialized
+2025-07-23 12:55:10,437 - DataLogger - INFO - Data logging session started
+2025-07-23 12:55:10,438 - DataCollector - INFO - DataCollector initialized for simplified HFT trading
+2025-07-23 12:55:10,439 - DataCollector - INFO - === System Status ===
+2025-07-23 12:55:10,440 - DataCollector - INFO - OpenAPI: Disconnected
+2025-07-23 12:55:10,441 - DataCollector - INFO - FIX: Disconnected
+2025-07-23 12:55:10,442 - DataCollector - INFO - Active Positions: 0
+2025-07-23 12:55:10,443 - DataCollector - INFO - Ready Symbols: 0/4
+2025-07-23 12:55:10,444 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 12:55:10,445 - DataCollector - INFO - ====================
+2025-07-23 12:55:10,446 - main - INFO - Starting trading system...
+2025-07-23 12:55:10,447 - main - INFO - Press Ctrl+C to stop
+2025-07-23 12:55:10,448 - DataCollector - INFO - Starting HFT Base Lite data collector...
+2025-07-23 12:55:10,457 - DataCollector - INFO - FIX connected
+2025-07-23 12:55:10,483 - DataCollector - INFO - OpenAPI connected - authenticating...
+2025-07-23 12:55:11,584 - DataLogger - INFO - Raw payload logging initialized: raw_payloads_20250723.log
+2025-07-23 12:55:11,587 - DataCollector - INFO - Application authenticated - getting accounts...
+2025-07-23 12:55:12,572 - DataCollector - INFO - Available accounts:
+2025-07-23 12:55:12,574 - DataCollector - INFO -   - Account ID: 43022787
+2025-07-23 12:55:12,576 - DataCollector - INFO -   - Account ID: 43035165
+2025-07-23 12:55:12,577 - DataCollector - INFO - ✅ Found working account: 43035165
+2025-07-23 12:55:12,578 - DataCollector - INFO - Using account: 43035165
+2025-07-23 12:55:13,627 - DataCollector - INFO - Account 43035165 authenticated - subscribing to market data...
+2025-07-23 12:55:13,630 - DataCollector - INFO - Subscribed to spots for all symbols: [1, 2, 4, 5]
+2025-07-23 12:55:13,633 - DataCollector - INFO - Subscribed to depth for all symbols: [1, 2, 4, 5]
+2025-07-23 12:55:14,563 - DataLogger - ERROR - Error logging tick data for symbol 1: unsupported format string passed to NoneType.__format__
+2025-07-23 12:55:14,566 - DataLogger - ERROR - Error logging tick data for symbol 2: unsupported format string passed to NoneType.__format__
+2025-07-23 12:55:14,568 - DataLogger - ERROR - Error logging tick data for symbol 4: unsupported format string passed to NoneType.__format__
+2025-07-23 12:55:14,570 - DataLogger - ERROR - Error logging tick data for symbol 5: unsupported format string passed to NoneType.__format__
+2025-07-23 12:55:14,572 - DataCollector - INFO - Spot subscription confirmed for account 43035165
+2025-07-23 12:55:14,638 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:55:14,644 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:55:14,649 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:55:14,653 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 12:55:14,691 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 12:55:14,696 - DataLogger - WARNING - High tick latency for EURUSD: 55.00ms
+2025-07-23 12:55:14,718 - DataLogger - WARNING - High tick latency for AUDUSD: 59.00ms
+2025-07-23 12:55:14,894 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:55:15,081 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:55:15,292 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:55:15,297 - DataLogger - WARNING - High tick latency for AUDUSD: 57.00ms
+2025-07-23 12:55:15,325 - DataLogger - WARNING - High tick latency for USDJPY: 86.00ms
+2025-07-23 12:55:15,479 - DataLogger - WARNING - High tick latency for GBPUSD: 40.00ms
+2025-07-23 12:55:15,486 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:55:15,883 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 12:55:16,086 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:55:16,488 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:55:16,679 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:55:16,889 - DataLogger - WARNING - High tick latency for USDJPY: 55.00ms
+2025-07-23 12:55:17,084 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:55:17,284 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 12:55:17,289 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 12:55:17,522 - DataLogger - WARNING - High tick latency for EURUSD: 65.00ms
+2025-07-23 12:55:18,293 - DataLogger - WARNING - High tick latency for EURUSD: 57.00ms
+2025-07-23 12:55:18,319 - DataLogger - WARNING - High tick latency for USDJPY: 81.00ms
+2025-07-23 12:55:18,482 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:55:18,691 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:55:19,295 - DataLogger - WARNING - High tick latency for GBPUSD: 48.00ms
+2025-07-23 12:55:19,723 - DataLogger - WARNING - High tick latency for AUDUSD: 81.00ms
+2025-07-23 12:55:19,728 - DataLogger - WARNING - High tick latency for EURUSD: 74.00ms
+2025-07-23 12:55:19,883 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:55:19,888 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 12:55:19,892 - DataLogger - WARNING - High tick latency for AUDUSD: 53.00ms
+2025-07-23 12:55:20,292 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 12:55:20,298 - DataLogger - WARNING - High tick latency for AUDUSD: 53.00ms
+2025-07-23 12:55:20,439 - DataCollector - INFO - === System Status ===
+2025-07-23 12:55:20,442 - DataCollector - INFO - OpenAPI: Connected
+2025-07-23 12:55:20,443 - DataCollector - INFO - FIX: Connected
+2025-07-23 12:55:20,445 - DataCollector - INFO - Active Positions: 0
+2025-07-23 12:55:20,447 - DataCollector - INFO - Ready Symbols: 1/4
+2025-07-23 12:55:20,448 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 12:55:20,449 - DataCollector - INFO - ====================
+2025-07-23 12:55:20,452 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.2 minutes
+Ticks Processed: 35
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 2.88ms
+  95th Percentile: 7.11ms
+  Min/Max: 1.10ms / 19.79ms
+  Sample Count: 35
+
+Depth Processing Latencies:
+  Average: 1.02ms
+  95th Percentile: 1.20ms
+  Min/Max: 0.05ms / 24.09ms
+  Sample Count: 61
+
+============================================================
+2025-07-23 12:55:20,456 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:20,457 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:55:20,459 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:20,460 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:55:20,462 - DataLogger - INFO -   TICK DATA (7 updates):
+2025-07-23 12:55:20,463 - DataLogger - INFO -     Average: 94.43ms
+2025-07-23 12:55:20,464 - DataLogger - INFO -     Min/Max: 45.00ms / 317.00ms
+2025-07-23 12:55:20,466 - DataLogger - INFO -     P50/P95/P99: 57.00ms / 74.00ms / 74.00ms
+2025-07-23 12:55:20,467 - DataLogger - INFO -   DOM DATA (13 updates):
+2025-07-23 12:55:20,468 - DataLogger - INFO -     Average: 0.08ms
+2025-07-23 12:55:20,469 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:20,471 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 12:55:20,472 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:55:20,473 - DataLogger - INFO -   TICK DATA (6 updates):
+2025-07-23 12:55:20,474 - DataLogger - INFO -     Average: 193.67ms
+2025-07-23 12:55:20,476 - DataLogger - INFO -     Min/Max: 40.00ms / 928.00ms
+2025-07-23 12:55:20,477 - DataLogger - INFO -     P50/P95/P99: 48.00ms / 52.00ms / 52.00ms
+2025-07-23 12:55:20,478 - DataLogger - INFO -   DOM DATA (15 updates):
+2025-07-23 12:55:20,479 - DataLogger - INFO -     Average: 0.13ms
+2025-07-23 12:55:20,481 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:20,482 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:55:20,483 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:55:20,484 - DataLogger - INFO -   TICK DATA (16 updates):
+2025-07-23 12:55:20,486 - DataLogger - INFO -     Average: 68.69ms
+2025-07-23 12:55:20,487 - DataLogger - INFO -     Min/Max: 42.00ms / 330.00ms
+2025-07-23 12:55:20,489 - DataLogger - INFO -     P50/P95/P99: 47.00ms / 86.00ms / 86.00ms
+2025-07-23 12:55:20,490 - DataLogger - INFO -   DOM DATA (23 updates):
+2025-07-23 12:55:20,491 - DataLogger - INFO -     Average: 0.09ms
+2025-07-23 12:55:20,492 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:20,493 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 1.00ms
+2025-07-23 12:55:20,494 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:55:20,496 - DataLogger - INFO -   TICK DATA (6 updates):
+2025-07-23 12:55:20,497 - DataLogger - INFO -     Average: 70.33ms
+2025-07-23 12:55:20,498 - DataLogger - INFO -     Min/Max: 53.00ms / 119.00ms
+2025-07-23 12:55:20,499 - DataLogger - INFO -     P50/P95/P99: 57.00ms / 81.00ms / 81.00ms
+2025-07-23 12:55:20,517 - DataLogger - INFO -   DOM DATA (10 updates):
+2025-07-23 12:55:20,519 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 12:55:20,521 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 12:55:20,523 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 12:55:20,524 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:20,525 - DataCollector - INFO - DATA RATES:
+2025-07-23 12:55:20,527 - DataCollector - INFO -   EURUSD: Tick=0.7/s, DOM=1.3/s
+2025-07-23 12:55:20,528 - DataCollector - INFO -   GBPUSD: Tick=0.6/s, DOM=1.5/s
+2025-07-23 12:55:20,529 - DataCollector - INFO -   USDJPY: Tick=1.6/s, DOM=2.3/s
+2025-07-23 12:55:20,531 - DataCollector - INFO -   AUDUSD: Tick=0.6/s, DOM=1.0/s
+2025-07-23 12:55:20,676 - DataLogger - WARNING - High tick latency for AUDUSD: 41.00ms
+2025-07-23 12:55:20,687 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:55:20,693 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:55:20,697 - DataLogger - WARNING - High tick latency for EURUSD: 57.00ms
+2025-07-23 12:55:20,887 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:55:20,893 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 12:55:21,289 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:55:21,298 - DataLogger - WARNING - High tick latency for AUDUSD: 52.00ms
+2025-07-23 12:55:21,737 - DataLogger - WARNING - High tick latency for AUDUSD: 95.00ms
+2025-07-23 12:55:22,081 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 12:55:22,087 - DataLogger - WARNING - High tick latency for EURUSD: 49.00ms
+2025-07-23 12:55:22,278 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:55:22,284 - DataLogger - WARNING - High tick latency for EURUSD: 47.00ms
+2025-07-23 12:55:22,289 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 12:55:22,318 - DataLogger - WARNING - High tick latency for AUDUSD: 68.00ms
+2025-07-23 12:55:22,494 - DataLogger - WARNING - High tick latency for GBPUSD: 53.00ms
+2025-07-23 12:55:22,499 - DataLogger - WARNING - High tick latency for USDJPY: 58.00ms
+2025-07-23 12:55:22,522 - DataLogger - WARNING - High tick latency for AUDUSD: 78.00ms
+2025-07-23 12:55:22,683 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:55:23,286 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:55:23,293 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 12:55:23,297 - DataLogger - WARNING - High tick latency for EURUSD: 55.00ms
+2025-07-23 12:55:23,316 - DataLogger - WARNING - High tick latency for AUDUSD: 73.00ms
+2025-07-23 12:55:23,487 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:55:23,493 - DataLogger - WARNING - High tick latency for EURUSD: 55.00ms
+2025-07-23 12:55:23,890 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:55:24,286 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 12:55:25,282 - DataLogger - WARNING - High tick latency for EURUSD: 42.00ms
+2025-07-23 12:55:25,287 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 12:55:25,292 - DataLogger - WARNING - High tick latency for AUDUSD: 53.00ms
+2025-07-23 12:55:25,483 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:55:25,487 - DataLogger - WARNING - High tick latency for EURUSD: 49.00ms
+2025-07-23 12:55:28,281 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-23 12:55:28,690 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 12:55:29,284 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-23 12:55:29,292 - DataLogger - WARNING - High tick latency for AUDUSD: 50.00ms
+2025-07-23 12:55:29,297 - DataLogger - WARNING - High tick latency for USDJPY: 55.00ms
+2025-07-23 12:55:29,498 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 12:55:29,681 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:55:30,284 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:55:30,293 - DataLogger - WARNING - High tick latency for AUDUSD: 50.00ms
+2025-07-23 12:55:30,481 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:55:30,497 - DataLogger - WARNING - High tick latency for AUDUSD: 50.00ms
+2025-07-23 12:55:30,686 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 12:55:30,886 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:55:31,278 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 12:55:31,291 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 12:55:31,498 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 12:55:31,679 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 12:55:32,079 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:55:32,314 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 12:55:32,681 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 12:55:32,889 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-23 12:55:33,294 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:55:33,299 - DataLogger - WARNING - High tick latency for EURUSD: 59.00ms
+2025-07-23 12:55:33,493 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-23 12:55:34,117 - DataLogger - WARNING - High tick latency for USDJPY: 76.00ms
+2025-07-23 12:55:34,284 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 12:55:34,491 - DataLogger - WARNING - High tick latency for EURUSD: 47.00ms
+2025-07-23 12:55:34,684 - DataLogger - WARNING - High tick latency for GBPUSD: 43.00ms
+2025-07-23 12:55:34,689 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 12:55:34,694 - DataLogger - WARNING - High tick latency for AUDUSD: 53.00ms
+2025-07-23 12:55:34,699 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-23 12:55:34,877 - DataLogger - WARNING - High tick latency for GBPUSD: 42.00ms
+2025-07-23 12:55:34,935 - DataLogger - WARNING - High tick latency for AUDUSD: 71.00ms
+2025-07-23 12:55:35,082 - DataLogger - WARNING - High tick latency for GBPUSD: 42.00ms
+2025-07-23 12:55:35,286 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 12:55:35,292 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 12:55:35,296 - DataLogger - WARNING - High tick latency for AUDUSD: 51.00ms
+2025-07-23 12:55:35,603 - main - INFO - Shutdown signal received. Stopping system...
+2025-07-23 12:55:35,621 - DataCollector - INFO - Stopping data collector...
+2025-07-23 12:55:35,622 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:35,624 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:55:35,625 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:35,627 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:55:35,628 - DataLogger - INFO -   TICK DATA (19 updates):
+2025-07-23 12:55:35,629 - DataLogger - INFO -     Average: 66.16ms
+2025-07-23 12:55:35,630 - DataLogger - INFO -     Min/Max: 42.00ms / 317.00ms
+2025-07-23 12:55:35,631 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 74.00ms / 74.00ms
+2025-07-23 12:55:35,632 - DataLogger - INFO -   DOM DATA (37 updates):
+2025-07-23 12:55:35,633 - DataLogger - INFO -     Average: 0.03ms
+2025-07-23 12:55:35,634 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,636 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 12:55:35,637 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:55:35,638 - DataLogger - INFO -   TICK DATA (17 updates):
+2025-07-23 12:55:35,639 - DataLogger - INFO -     Average: 98.65ms
+2025-07-23 12:55:35,641 - DataLogger - INFO -     Min/Max: 40.00ms / 928.00ms
+2025-07-23 12:55:35,642 - DataLogger - INFO -     P50/P95/P99: 47.00ms / 53.00ms / 53.00ms
+2025-07-23 12:55:35,643 - DataLogger - INFO -   DOM DATA (46 updates):
+2025-07-23 12:55:35,644 - DataLogger - INFO -     Average: 0.15ms
+2025-07-23 12:55:35,645 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,646 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:55:35,648 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:55:35,649 - DataLogger - INFO -   TICK DATA (43 updates):
+2025-07-23 12:55:35,650 - DataLogger - INFO -     Average: 56.05ms
+2025-07-23 12:55:35,652 - DataLogger - INFO -     Min/Max: 42.00ms / 330.00ms
+2025-07-23 12:55:35,653 - DataLogger - INFO -     P50/P95/P99: 47.00ms / 76.00ms / 86.00ms
+2025-07-23 12:55:35,654 - DataLogger - INFO -   DOM DATA (75 updates):
+2025-07-23 12:55:35,656 - DataLogger - INFO -     Average: 0.11ms
+2025-07-23 12:55:35,658 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,659 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:55:35,661 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:55:35,662 - DataLogger - INFO -   TICK DATA (25 updates):
+2025-07-23 12:55:35,663 - DataLogger - INFO -     Average: 59.16ms
+2025-07-23 12:55:35,664 - DataLogger - INFO -     Min/Max: 41.00ms / 119.00ms
+2025-07-23 12:55:35,666 - DataLogger - INFO -     P50/P95/P99: 53.00ms / 81.00ms / 95.00ms
+2025-07-23 12:55:35,667 - DataLogger - INFO -   DOM DATA (53 updates):
+2025-07-23 12:55:35,668 - DataLogger - INFO -     Average: 0.08ms
+2025-07-23 12:55:35,670 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,671 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:55:35,672 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:35,674 - DataLogger - INFO - All data log files closed
+2025-07-23 12:55:35,691 - DataCollector - WARNING - FIX disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-23 12:55:35,694 - DataCollector - WARNING - OpenAPI disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-23 12:55:35,697 - main - INFO - Generating final performance report...
+2025-07-23 12:55:35,699 - main - INFO - FINAL SYSTEM STATUS:
+2025-07-23 12:55:35,700 - main - INFO -   Performance: No trades completed yet
+2025-07-23 12:55:35,717 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.4 minutes
+Ticks Processed: 104
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.23ms
+  95th Percentile: 17.06ms
+  Min/Max: 1.10ms / 23.12ms
+  Sample Count: 104
+
+Depth Processing Latencies:
+  Average: 1.12ms
+  95th Percentile: 1.33ms
+  Min/Max: 0.05ms / 24.09ms
+  Sample Count: 211
+
+============================================================
+2025-07-23 12:55:35,718 - TradingClient - INFO - TradingClient Status:
+2025-07-23 12:55:35,720 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 12:55:35,721 - TradingClient - INFO -   No trades completed yet
+2025-07-23 12:55:35,723 - TradingClient - INFO -   Session Time: 0.4 minutes
+2025-07-23 12:55:35,723 - DataCollector - INFO - Stopping data collector...
+2025-07-23 12:55:35,725 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:35,726 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 12:55:35,727 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:35,728 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 12:55:35,730 - DataLogger - INFO -   TICK DATA (19 updates):
+2025-07-23 12:55:35,731 - DataLogger - INFO -     Average: 66.16ms
+2025-07-23 12:55:35,732 - DataLogger - INFO -     Min/Max: 42.00ms / 317.00ms
+2025-07-23 12:55:35,733 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 74.00ms / 74.00ms
+2025-07-23 12:55:35,734 - DataLogger - INFO -   DOM DATA (37 updates):
+2025-07-23 12:55:35,736 - DataLogger - INFO -     Average: 0.03ms
+2025-07-23 12:55:35,737 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,738 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 12:55:35,739 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 12:55:35,740 - DataLogger - INFO -   TICK DATA (17 updates):
+2025-07-23 12:55:35,741 - DataLogger - INFO -     Average: 98.65ms
+2025-07-23 12:55:35,743 - DataLogger - INFO -     Min/Max: 40.00ms / 928.00ms
+2025-07-23 12:55:35,744 - DataLogger - INFO -     P50/P95/P99: 47.00ms / 53.00ms / 53.00ms
+2025-07-23 12:55:35,745 - DataLogger - INFO -   DOM DATA (46 updates):
+2025-07-23 12:55:35,746 - DataLogger - INFO -     Average: 0.15ms
+2025-07-23 12:55:35,747 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,748 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:55:35,749 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 12:55:35,751 - DataLogger - INFO -   TICK DATA (43 updates):
+2025-07-23 12:55:35,752 - DataLogger - INFO -     Average: 56.05ms
+2025-07-23 12:55:35,753 - DataLogger - INFO -     Min/Max: 42.00ms / 330.00ms
+2025-07-23 12:55:35,755 - DataLogger - INFO -     P50/P95/P99: 47.00ms / 76.00ms / 86.00ms
+2025-07-23 12:55:35,756 - DataLogger - INFO -   DOM DATA (75 updates):
+2025-07-23 12:55:35,758 - DataLogger - INFO -     Average: 0.11ms
+2025-07-23 12:55:35,759 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,760 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:55:35,762 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 12:55:35,763 - DataLogger - INFO -   TICK DATA (25 updates):
+2025-07-23 12:55:35,764 - DataLogger - INFO -     Average: 59.16ms
+2025-07-23 12:55:35,766 - DataLogger - INFO -     Min/Max: 41.00ms / 119.00ms
+2025-07-23 12:55:35,767 - DataLogger - INFO -     P50/P95/P99: 53.00ms / 81.00ms / 95.00ms
+2025-07-23 12:55:35,768 - DataLogger - INFO -   DOM DATA (53 updates):
+2025-07-23 12:55:35,769 - DataLogger - INFO -     Average: 0.08ms
+2025-07-23 12:55:35,770 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 12:55:35,771 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 12:55:35,772 - DataLogger - INFO - ================================================================================
+2025-07-23 12:55:35,773 - DataLogger - INFO - All data log files closed
+2025-07-23 12:55:35,774 - main - INFO - ============================================================
+2025-07-23 12:55:35,776 - main - INFO - HFT BASE LITE - SHUTDOWN COMPLETE
+2025-07-23 12:55:35,777 - main - INFO - ============================================================
+2025-07-23 13:04:36,976 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 13:04:36,982 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250723.log, dom=dom_data_eurusd_20250723.log
+2025-07-23 13:04:36,991 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250723.log, dom=dom_data_gbpusd_20250723.log
+2025-07-23 13:04:36,994 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250723.log, dom=dom_data_usdjpy_20250723.log
+2025-07-23 13:04:36,997 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250723.log, dom=dom_data_audusd_20250723.log
+2025-07-23 13:04:36,998 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-23 13:04:37,023 - main - INFO - ============================================================
+2025-07-23 13:04:37,025 - main - INFO - HFT BASE LITE - STARTING
+2025-07-23 13:04:37,026 - main - INFO - ============================================================
+2025-07-23 13:04:37,027 - main - INFO - Active Symbols: 4
+2025-07-23 13:04:37,028 - main - INFO -   1: EURUSD
+2025-07-23 13:04:37,029 - main - INFO -   2: GBPUSD
+2025-07-23 13:04:37,030 - main - INFO -   4: USDJPY
+2025-07-23 13:04:37,031 - main - INFO -   5: AUDUSD
+2025-07-23 13:04:37,032 - main - INFO - Session Duration: 60 minutes
+2025-07-23 13:04:37,033 - main - INFO - ============================================================
+2025-07-23 13:04:37,034 - main - INFO - Initializing DataCollector...
+2025-07-23 13:04:37,037 - TickClient_EURUSD - INFO - TickClient initialized for EURUSD
+2025-07-23 13:04:37,038 - DepthClient_EURUSD - INFO - DepthClient initialized for EURUSD
+2025-07-23 13:04:37,039 - TickClient_GBPUSD - INFO - TickClient initialized for GBPUSD
+2025-07-23 13:04:37,040 - DepthClient_GBPUSD - INFO - DepthClient initialized for GBPUSD
+2025-07-23 13:04:37,041 - TickClient_USDJPY - INFO - TickClient initialized for USDJPY
+2025-07-23 13:04:37,042 - DepthClient_USDJPY - INFO - DepthClient initialized for USDJPY
+2025-07-23 13:04:37,043 - TickClient_AUDUSD - INFO - TickClient initialized for AUDUSD
+2025-07-23 13:04:37,044 - DepthClient_AUDUSD - INFO - DepthClient initialized for AUDUSD
+2025-07-23 13:04:37,046 - TradingClient - INFO - TradingClient initialized
+2025-07-23 13:04:37,046 - DataLogger - INFO - Data logging session started
+2025-07-23 13:04:37,047 - DataCollector - INFO - DataCollector initialized for simplified HFT trading
+2025-07-23 13:04:37,048 - DataCollector - INFO - === System Status ===
+2025-07-23 13:04:37,049 - DataCollector - INFO - OpenAPI: Disconnected
+2025-07-23 13:04:37,051 - DataCollector - INFO - FIX: Disconnected
+2025-07-23 13:04:37,052 - DataCollector - INFO - Active Positions: 0
+2025-07-23 13:04:37,053 - DataCollector - INFO - Ready Symbols: 0/4
+2025-07-23 13:04:37,054 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 13:04:37,056 - DataCollector - INFO - ====================
+2025-07-23 13:04:37,057 - main - INFO - Starting trading system...
+2025-07-23 13:04:37,058 - main - INFO - Press Ctrl+C to stop
+2025-07-23 13:04:37,059 - DataCollector - INFO - Starting HFT Base Lite data collector...
+2025-07-23 13:04:37,076 - DataCollector - INFO - FIX connected
+2025-07-23 13:04:37,111 - DataCollector - INFO - OpenAPI connected - authenticating...
+2025-07-23 13:04:38,218 - DataLogger - INFO - Raw payload logging initialized: raw_payloads_20250723.log
+2025-07-23 13:04:38,220 - DataCollector - INFO - Application authenticated - getting accounts...
+2025-07-23 13:04:39,214 - DataCollector - INFO - Available accounts:
+2025-07-23 13:04:39,217 - DataCollector - INFO -   - Account ID: 43022787
+2025-07-23 13:04:39,220 - DataCollector - INFO -   - Account ID: 43035165
+2025-07-23 13:04:39,222 - DataCollector - INFO - ✅ Found working account: 43035165
+2025-07-23 13:04:39,223 - DataCollector - INFO - Using account: 43035165
+2025-07-23 13:04:40,216 - DataCollector - INFO - Account 43035165 authenticated - subscribing to market data...
+2025-07-23 13:04:40,219 - DataCollector - INFO - Subscribed to spots for all symbols: [1, 2, 4, 5]
+2025-07-23 13:04:40,223 - DataCollector - INFO - Subscribed to depth for all symbols: [1, 2, 4, 5]
+2025-07-23 13:04:41,200 - DataCollector - INFO - Raw spot data logging initialized: raw_spot_data_20250723.log
+2025-07-23 13:04:41,220 - DataLogger - ERROR - Error logging tick data for symbol 1: unsupported format string passed to NoneType.__format__
+2025-07-23 13:04:41,224 - DataLogger - ERROR - Error logging tick data for symbol 2: unsupported format string passed to NoneType.__format__
+2025-07-23 13:04:41,227 - DataLogger - ERROR - Error logging tick data for symbol 4: unsupported format string passed to NoneType.__format__
+2025-07-23 13:04:41,232 - DataLogger - ERROR - Error logging tick data for symbol 5: unsupported format string passed to NoneType.__format__
+2025-07-23 13:04:41,234 - DataCollector - INFO - Spot subscription confirmed for account 43035165
+2025-07-23 13:04:41,239 - DataCollector - INFO - Raw DOM data logging initialized: raw_dom_data_20250723.log
+2025-07-23 13:04:41,269 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:04:41,275 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:04:41,280 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:04:41,286 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:04:41,317 - DataLogger - WARNING - High tick latency for EURUSD: 70.00ms
+2025-07-23 13:04:41,324 - DataLogger - WARNING - High tick latency for AUDUSD: 77.00ms
+2025-07-23 13:04:41,516 - DataLogger - WARNING - High tick latency for EURUSD: 68.00ms
+2025-07-23 13:04:41,523 - DataLogger - WARNING - High tick latency for GBPUSD: 74.00ms
+2025-07-23 13:04:41,527 - DataLogger - WARNING - High tick latency for USDJPY: 78.00ms
+2025-07-23 13:04:41,877 - DataLogger - WARNING - High tick latency for GBPUSD: 42.00ms
+2025-07-23 13:04:41,888 - DataLogger - WARNING - High tick latency for EURUSD: 51.00ms
+2025-07-23 13:04:42,315 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-23 13:04:42,327 - main - INFO - Shutdown signal received. Stopping system...
+2025-07-23 13:04:42,329 - DataCollector - INFO - Stopping data collector...
+2025-07-23 13:04:42,331 - DataLogger - INFO - ================================================================================
+2025-07-23 13:04:42,333 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 13:04:42,335 - DataLogger - INFO - ================================================================================
+2025-07-23 13:04:42,337 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 13:04:42,339 - DataLogger - INFO -   TICK DATA (5 updates):
+2025-07-23 13:04:42,342 - DataLogger - INFO -     Average: 124.00ms
+2025-07-23 13:04:42,343 - DataLogger - INFO -     Min/Max: 50.00ms / 381.00ms
+2025-07-23 13:04:42,345 - DataLogger - INFO -     P50/P95/P99: 68.00ms / 70.00ms / 70.00ms
+2025-07-23 13:04:42,347 - DataLogger - INFO -   DOM DATA (8 updates):
+2025-07-23 13:04:42,348 - DataLogger - INFO -     Average: 0.25ms
+2025-07-23 13:04:42,349 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 13:04:42,351 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 13:04:42,352 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 13:04:42,354 - DataLogger - INFO -   TICK DATA (3 updates):
+2025-07-23 13:04:42,356 - DataLogger - INFO -     Average: 167.00ms
+2025-07-23 13:04:42,357 - DataLogger - INFO -     Min/Max: 42.00ms / 385.00ms
+2025-07-23 13:04:42,359 - DataLogger - INFO -     P50/P95/P99: 74.00ms / 74.00ms / 74.00ms
+2025-07-23 13:04:42,360 - DataLogger - INFO -   DOM DATA (5 updates):
+2025-07-23 13:04:42,362 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 13:04:42,363 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 13:04:42,365 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:04:42,366 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 13:04:42,367 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-23 13:04:42,369 - DataLogger - INFO -     Average: 326.00ms
+2025-07-23 13:04:42,370 - DataLogger - INFO -     Min/Max: 78.00ms / 574.00ms
+2025-07-23 13:04:42,372 - DataLogger - INFO -     P50/P95/P99: 78.00ms / 78.00ms / 78.00ms
+2025-07-23 13:04:42,373 - DataLogger - INFO -   DOM DATA (6 updates):
+2025-07-23 13:04:42,374 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 13:04:42,376 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 13:04:42,377 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:04:42,378 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 13:04:42,380 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-23 13:04:42,381 - DataLogger - INFO -     Average: 1031.50ms
+2025-07-23 13:04:42,383 - DataLogger - INFO -     Min/Max: 77.00ms / 1986.00ms
+2025-07-23 13:04:42,384 - DataLogger - INFO -     P50/P95/P99: 77.00ms / 77.00ms / 77.00ms
+2025-07-23 13:04:42,386 - DataLogger - INFO -   DOM DATA (4 updates):
+2025-07-23 13:04:42,387 - DataLogger - INFO -     Average: 0.25ms
+2025-07-23 13:04:42,388 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 13:04:42,389 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:04:42,391 - DataLogger - INFO - ================================================================================
+2025-07-23 13:04:42,396 - DataLogger - INFO - All data log files closed
+2025-07-23 13:04:42,397 - DataCollector - INFO - Raw spot log file closed
+2025-07-23 13:04:42,399 - DataCollector - INFO - Raw DOM log file closed
+2025-07-23 13:04:42,435 - DataCollector - WARNING - OpenAPI disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-23 13:04:42,438 - DataCollector - WARNING - FIX disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-23 13:04:42,442 - main - INFO - Generating final performance report...
+2025-07-23 13:04:42,444 - main - INFO - FINAL SYSTEM STATUS:
+2025-07-23 13:04:42,445 - main - INFO -   Performance: No trades completed yet
+2025-07-23 13:04:42,447 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.1 minutes
+Ticks Processed: 12
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.63ms
+  95th Percentile: 3.63ms
+  Min/Max: 1.70ms / 19.20ms
+  Sample Count: 12
+
+Depth Processing Latencies:
+  Average: 0.56ms
+  95th Percentile: 0.94ms
+  Min/Max: 0.05ms / 0.96ms
+  Sample Count: 23
+
+============================================================
+2025-07-23 13:04:42,449 - TradingClient - INFO - TradingClient Status:
+2025-07-23 13:04:42,450 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 13:04:42,452 - TradingClient - INFO -   No trades completed yet
+2025-07-23 13:04:42,453 - TradingClient - INFO -   Session Time: 0.1 minutes
+2025-07-23 13:04:42,454 - DataCollector - INFO - Stopping data collector...
+2025-07-23 13:04:42,456 - DataLogger - INFO - ================================================================================
+2025-07-23 13:04:42,457 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 13:04:42,459 - DataLogger - INFO - ================================================================================
+2025-07-23 13:04:42,460 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 13:04:42,462 - DataLogger - INFO -   TICK DATA (5 updates):
+2025-07-23 13:04:42,463 - DataLogger - INFO -     Average: 124.00ms
+2025-07-23 13:04:42,464 - DataLogger - INFO -     Min/Max: 50.00ms / 381.00ms
+2025-07-23 13:04:42,467 - DataLogger - INFO -     P50/P95/P99: 68.00ms / 70.00ms / 70.00ms
+2025-07-23 13:04:42,468 - DataLogger - INFO -   DOM DATA (8 updates):
+2025-07-23 13:04:42,469 - DataLogger - INFO -     Average: 0.25ms
+2025-07-23 13:04:42,471 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 13:04:42,472 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 13:04:42,473 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 13:04:42,475 - DataLogger - INFO -   TICK DATA (3 updates):
+2025-07-23 13:04:42,476 - DataLogger - INFO -     Average: 167.00ms
+2025-07-23 13:04:42,478 - DataLogger - INFO -     Min/Max: 42.00ms / 385.00ms
+2025-07-23 13:04:42,479 - DataLogger - INFO -     P50/P95/P99: 74.00ms / 74.00ms / 74.00ms
+2025-07-23 13:04:42,481 - DataLogger - INFO -   DOM DATA (5 updates):
+2025-07-23 13:04:42,482 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 13:04:42,484 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 13:04:42,486 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:04:42,487 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 13:04:42,488 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-23 13:04:42,490 - DataLogger - INFO -     Average: 326.00ms
+2025-07-23 13:04:42,491 - DataLogger - INFO -     Min/Max: 78.00ms / 574.00ms
+2025-07-23 13:04:42,492 - DataLogger - INFO -     P50/P95/P99: 78.00ms / 78.00ms / 78.00ms
+2025-07-23 13:04:42,494 - DataLogger - INFO -   DOM DATA (6 updates):
+2025-07-23 13:04:42,495 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 13:04:42,497 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 13:04:42,519 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:04:42,522 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 13:04:42,524 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-23 13:04:42,525 - DataLogger - INFO -     Average: 1031.50ms
+2025-07-23 13:04:42,527 - DataLogger - INFO -     Min/Max: 77.00ms / 1986.00ms
+2025-07-23 13:04:42,528 - DataLogger - INFO -     P50/P95/P99: 77.00ms / 77.00ms / 77.00ms
+2025-07-23 13:04:42,529 - DataLogger - INFO -   DOM DATA (4 updates):
+2025-07-23 13:04:42,531 - DataLogger - INFO -     Average: 0.25ms
+2025-07-23 13:04:42,532 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 13:04:42,534 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:04:42,537 - DataLogger - INFO - ================================================================================
+2025-07-23 13:04:42,538 - DataLogger - INFO - All data log files closed
+2025-07-23 13:04:42,540 - DataCollector - INFO - Raw spot log file closed
+2025-07-23 13:04:42,542 - DataCollector - INFO - Raw DOM log file closed
+2025-07-23 13:04:42,543 - main - INFO - ============================================================
+2025-07-23 13:04:42,544 - main - INFO - HFT BASE LITE - SHUTDOWN COMPLETE
+2025-07-23 13:04:42,546 - main - INFO - ============================================================
+2025-07-23 13:05:59,444 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 13:05:59,450 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250723.log, dom=dom_data_eurusd_20250723.log
+2025-07-23 13:05:59,453 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250723.log, dom=dom_data_gbpusd_20250723.log
+2025-07-23 13:05:59,456 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250723.log, dom=dom_data_usdjpy_20250723.log
+2025-07-23 13:05:59,459 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250723.log, dom=dom_data_audusd_20250723.log
+2025-07-23 13:05:59,460 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-23 13:05:59,465 - main - INFO - ============================================================
+2025-07-23 13:05:59,466 - main - INFO - HFT BASE LITE - STARTING
+2025-07-23 13:05:59,467 - main - INFO - ============================================================
+2025-07-23 13:05:59,468 - main - INFO - Active Symbols: 4
+2025-07-23 13:05:59,469 - main - INFO -   1: EURUSD
+2025-07-23 13:05:59,470 - main - INFO -   2: GBPUSD
+2025-07-23 13:05:59,471 - main - INFO -   4: USDJPY
+2025-07-23 13:05:59,472 - main - INFO -   5: AUDUSD
+2025-07-23 13:05:59,473 - main - INFO - Session Duration: 60 minutes
+2025-07-23 13:05:59,474 - main - INFO - ============================================================
+2025-07-23 13:05:59,475 - main - INFO - Initializing DataCollector...
+2025-07-23 13:05:59,478 - TickClient_EURUSD - INFO - TickClient initialized for EURUSD
+2025-07-23 13:05:59,480 - DepthClient_EURUSD - INFO - DepthClient initialized for EURUSD
+2025-07-23 13:05:59,482 - TickClient_GBPUSD - INFO - TickClient initialized for GBPUSD
+2025-07-23 13:05:59,483 - DepthClient_GBPUSD - INFO - DepthClient initialized for GBPUSD
+2025-07-23 13:05:59,483 - TickClient_USDJPY - INFO - TickClient initialized for USDJPY
+2025-07-23 13:05:59,484 - DepthClient_USDJPY - INFO - DepthClient initialized for USDJPY
+2025-07-23 13:05:59,486 - TickClient_AUDUSD - INFO - TickClient initialized for AUDUSD
+2025-07-23 13:05:59,487 - DepthClient_AUDUSD - INFO - DepthClient initialized for AUDUSD
+2025-07-23 13:05:59,488 - TradingClient - INFO - TradingClient initialized
+2025-07-23 13:05:59,489 - DataLogger - INFO - Data logging session started
+2025-07-23 13:05:59,491 - DataCollector - INFO - DataCollector initialized for simplified HFT trading
+2025-07-23 13:05:59,492 - DataCollector - INFO - === System Status ===
+2025-07-23 13:05:59,493 - DataCollector - INFO - OpenAPI: Disconnected
+2025-07-23 13:05:59,494 - DataCollector - INFO - FIX: Disconnected
+2025-07-23 13:05:59,495 - DataCollector - INFO - Active Positions: 0
+2025-07-23 13:05:59,496 - DataCollector - INFO - Ready Symbols: 0/4
+2025-07-23 13:05:59,497 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 13:05:59,498 - DataCollector - INFO - ====================
+2025-07-23 13:05:59,499 - main - INFO - Starting trading system...
+2025-07-23 13:05:59,500 - main - INFO - Press Ctrl+C to stop
+2025-07-23 13:05:59,517 - DataCollector - INFO - Starting HFT Base Lite data collector...
+2025-07-23 13:05:59,533 - DataCollector - INFO - FIX connected
+2025-07-23 13:05:59,547 - DataCollector - INFO - OpenAPI connected - authenticating...
+2025-07-23 13:06:00,653 - DataLogger - INFO - Raw payload logging initialized: raw_payloads_20250723.log
+2025-07-23 13:06:00,655 - DataCollector - INFO - Application authenticated - getting accounts...
+2025-07-23 13:06:01,642 - DataCollector - INFO - Available accounts:
+2025-07-23 13:06:01,644 - DataCollector - INFO -   - Account ID: 43022787
+2025-07-23 13:06:01,646 - DataCollector - INFO -   - Account ID: 43035165
+2025-07-23 13:06:01,647 - DataCollector - INFO - ✅ Found working account: 43035165
+2025-07-23 13:06:01,648 - DataCollector - INFO - Using account: 43035165
+2025-07-23 13:06:02,659 - DataCollector - INFO - Account 43035165 authenticated - subscribing to market data...
+2025-07-23 13:06:02,662 - DataCollector - INFO - Subscribed to spots for all symbols: [1, 2, 4, 5]
+2025-07-23 13:06:02,665 - DataCollector - INFO - Subscribed to depth for all symbols: [1, 2, 4, 5]
+2025-07-23 13:06:03,632 - DataCollector - INFO - Pure spot data logging initialized: pure_spot_data_20250723.log
+2025-07-23 13:06:03,634 - DataLogger - ERROR - Error logging tick data for symbol 1: unsupported format string passed to NoneType.__format__
+2025-07-23 13:06:03,638 - DataLogger - ERROR - Error logging tick data for symbol 2: unsupported format string passed to NoneType.__format__
+2025-07-23 13:06:03,641 - DataLogger - ERROR - Error logging tick data for symbol 4: unsupported format string passed to NoneType.__format__
+2025-07-23 13:06:03,643 - DataLogger - ERROR - Error logging tick data for symbol 5: unsupported format string passed to NoneType.__format__
+2025-07-23 13:06:03,646 - DataCollector - INFO - Spot subscription confirmed for account 43035165
+2025-07-23 13:06:03,649 - DataCollector - INFO - Pure dom data logging initialized: pure_dom_data_20250723.log
+2025-07-23 13:06:03,659 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:06:03,716 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:06:03,724 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:06:03,728 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-23 13:06:03,738 - DataLogger - WARNING - High tick latency for GBPUSD: 92.00ms
+2025-07-23 13:06:03,744 - DataLogger - WARNING - High tick latency for EURUSD: 97.00ms
+2025-07-23 13:06:03,750 - DataLogger - WARNING - High tick latency for USDJPY: 103.00ms
+2025-07-23 13:06:03,885 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 13:06:04,684 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-23 13:06:05,279 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 13:06:05,286 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 13:06:05,290 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 13:06:05,683 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 13:06:06,291 - DataLogger - WARNING - High tick latency for EURUSD: 52.00ms
+2025-07-23 13:06:06,300 - DataLogger - WARNING - High tick latency for AUDUSD: 49.00ms
+2025-07-23 13:06:06,683 - DataLogger - WARNING - High tick latency for GBPUSD: 43.00ms
+2025-07-23 13:06:06,689 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-23 13:06:07,281 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 13:06:07,286 - DataLogger - WARNING - High tick latency for EURUSD: 49.00ms
+2025-07-23 13:06:07,717 - DataLogger - WARNING - High tick latency for USDJPY: 72.00ms
+2025-07-23 13:06:07,724 - DataLogger - WARNING - High tick latency for AUDUSD: 79.00ms
+2025-07-23 13:06:07,730 - DataLogger - WARNING - High tick latency for EURUSD: 85.00ms
+2025-07-23 13:06:07,886 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 13:06:07,896 - DataLogger - WARNING - High tick latency for EURUSD: 51.00ms
+2025-07-23 13:06:08,086 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 13:06:08,292 - DataLogger - WARNING - High tick latency for EURUSD: 53.00ms
+2025-07-23 13:06:08,300 - DataLogger - WARNING - High tick latency for USDJPY: 62.00ms
+2025-07-23 13:06:08,323 - DataLogger - WARNING - High tick latency for AUDUSD: 85.00ms
+2025-07-23 13:06:08,892 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 13:06:09,296 - DataLogger - WARNING - High tick latency for EURUSD: 56.00ms
+2025-07-23 13:06:09,319 - DataLogger - WARNING - High tick latency for USDJPY: 78.00ms
+2025-07-23 13:06:09,327 - DataLogger - WARNING - High tick latency for GBPUSD: 86.00ms
+2025-07-23 13:06:09,333 - DataLogger - WARNING - High tick latency for AUDUSD: 91.00ms
+2025-07-23 13:06:09,492 - DataCollector - INFO - === System Status ===
+2025-07-23 13:06:09,494 - DataCollector - INFO - OpenAPI: Connected
+2025-07-23 13:06:09,496 - DataCollector - INFO - FIX: Connected
+2025-07-23 13:06:09,532 - DataCollector - INFO - Active Positions: 0
+2025-07-23 13:06:09,537 - DataCollector - INFO - Ready Symbols: 2/4
+2025-07-23 13:06:09,538 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-23 13:06:09,540 - DataCollector - INFO - ====================
+2025-07-23 13:06:09,543 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.2 minutes
+Ticks Processed: 33
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.06ms
+  95th Percentile: 18.75ms
+  Min/Max: 1.14ms / 18.95ms
+  Sample Count: 33
+
+Depth Processing Latencies:
+  Average: 1.03ms
+  95th Percentile: 1.20ms
+  Min/Max: 0.05ms / 16.02ms
+  Sample Count: 68
+
+============================================================
+2025-07-23 13:06:09,545 - DataLogger - INFO - ================================================================================
+2025-07-23 13:06:09,547 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-23 13:06:09,548 - DataLogger - INFO - ================================================================================
+2025-07-23 13:06:09,550 - DataLogger - INFO - 
+EURUSD:
+2025-07-23 13:06:09,551 - DataLogger - INFO -   TICK DATA (10 updates):
+2025-07-23 13:06:09,553 - DataLogger - INFO -     Average: 73.40ms
+2025-07-23 13:06:09,554 - DataLogger - INFO -     Min/Max: 45.00ms / 198.00ms
+2025-07-23 13:06:09,556 - DataLogger - INFO -     P50/P95/P99: 52.00ms / 97.00ms / 97.00ms
+2025-07-23 13:06:09,557 - DataLogger - INFO -   DOM DATA (15 updates):
+2025-07-23 13:06:09,558 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 13:06:09,560 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 13:06:09,562 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:06:09,563 - DataLogger - INFO - 
+GBPUSD:
+2025-07-23 13:06:09,565 - DataLogger - INFO -   TICK DATA (6 updates):
+2025-07-23 13:06:09,567 - DataLogger - INFO -     Average: 86.67ms
+2025-07-23 13:06:09,568 - DataLogger - INFO -     Min/Max: 43.00ms / 201.00ms
+2025-07-23 13:06:09,570 - DataLogger - INFO -     P50/P95/P99: 52.00ms / 92.00ms / 92.00ms
+2025-07-23 13:06:09,572 - DataLogger - INFO -   DOM DATA (17 updates):
+2025-07-23 13:06:09,573 - DataLogger - INFO -     Average: 0.12ms
+2025-07-23 13:06:09,574 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 13:06:09,576 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-23 13:06:09,577 - DataLogger - INFO - 
+USDJPY:
+2025-07-23 13:06:09,578 - DataLogger - INFO -   TICK DATA (10 updates):
+2025-07-23 13:06:09,579 - DataLogger - INFO -     Average: 93.90ms
+2025-07-23 13:06:09,585 - DataLogger - INFO -     Min/Max: 42.00ms / 394.00ms
+2025-07-23 13:06:09,586 - DataLogger - INFO -     P50/P95/P99: 50.00ms / 103.00ms / 103.00ms
+2025-07-23 13:06:09,588 - DataLogger - INFO -   DOM DATA (22 updates):
+2025-07-23 13:06:09,589 - DataLogger - INFO -     Average: 0.00ms
+2025-07-23 13:06:09,590 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-23 13:06:09,592 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:06:09,593 - DataLogger - INFO - 
+AUDUSD:
+2025-07-23 13:06:09,594 - DataLogger - INFO -   TICK DATA (7 updates):
+2025-07-23 13:06:09,596 - DataLogger - INFO -     Average: 112.57ms
+2025-07-23 13:06:09,597 - DataLogger - INFO -     Min/Max: 44.00ms / 395.00ms
+2025-07-23 13:06:09,598 - DataLogger - INFO -     P50/P95/P99: 79.00ms / 91.00ms / 91.00ms
+2025-07-23 13:06:09,600 - DataLogger - INFO -   DOM DATA (14 updates):
+2025-07-23 13:06:09,621 - DataLogger - INFO -     Average: 0.07ms
+2025-07-23 13:06:09,623 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-23 13:06:09,624 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-23 13:06:09,625 - DataLogger - INFO - ================================================================================
+2025-07-23 13:06:09,627 - DataCollector - INFO - DATA RATES:
+2025-07-23 13:06:09,628 - DataCollector - INFO -   EURUSD: Tick=1.0/s, DOM=1.5/s
+2025-07-23 13:06:09,630 - DataCollector - INFO -   GBPUSD: Tick=0.6/s, DOM=1.7/s
+2025-07-23 13:06:09,631 - DataCollector - INFO -   USDJPY: Tick=1.0/s, DOM=2.2/s
+2025-07-23 13:06:09,632 - DataCollector - INFO -   AUDUSD: Tick=0.7/s, DOM=1.4/s
+2025-07-23 13:06:09,696 - DataLogger - WARNING - High tick latency for GBPUSD: 56.00ms
+2025-07-23 13:06:09,890 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 13:06:09,900 - DataLogger - WARNING - High tick latency for GBPUSD: 59.00ms
+2025-07-23 13:06:10,288 - DataLogger - WARNING - High tick latency for GBPUSD: 49.00ms
+2025-07-23 13:06:10,294 - DataLogger - WARNING - High tick latency for EURUSD: 51.00ms
+2025-07-23 13:06:10,683 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-23 13:06:10,892 - DataLogger - WARNING - High tick latency for GBPUSD: 58.00ms
+2025-07-23 13:06:11,079 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-23 13:06:11,522 - DataLogger - WARNING - High tick latency for GBPUSD: 84.00ms
+2025-07-23 13:06:11,681 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 13:06:11,886 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 13:06:11,892 - DataLogger - WARNING - High tick latency for GBPUSD: 55.00ms
+2025-07-23 13:06:12,285 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 13:06:12,682 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 13:06:13,284 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 13:06:13,494 - DataLogger - WARNING - High tick latency for GBPUSD: 52.00ms
+2025-07-23 13:06:13,519 - DataLogger - WARNING - High tick latency for EURUSD: 59.00ms
+2025-07-23 13:06:13,886 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 13:06:14,287 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 13:06:14,490 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 13:06:14,688 - DataLogger - WARNING - High tick latency for EURUSD: 47.00ms
+2025-07-23 13:06:14,878 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 13:06:14,884 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 13:06:15,719 - DataLogger - WARNING - High tick latency for EURUSD: 57.00ms
+2025-07-23 13:06:15,879 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 13:06:15,888 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 13:06:16,086 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 13:06:16,287 - DataLogger - WARNING - High tick latency for AUDUSD: 48.00ms
+2025-07-23 13:06:16,293 - DataLogger - WARNING - High tick latency for EURUSD: 53.00ms
+2025-07-23 13:06:16,296 - DataLogger - WARNING - High tick latency for USDJPY: 56.00ms
+2025-07-23 13:06:16,489 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 13:06:16,683 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 13:06:16,884 - DataLogger - WARNING - High tick latency for AUDUSD: 47.00ms
+2025-07-23 13:06:16,891 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 13:06:17,083 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 13:06:17,293 - DataLogger - WARNING - High tick latency for GBPUSD: 53.00ms
+2025-07-23 13:06:17,309 - DataLogger - WARNING - High tick latency for USDJPY: 60.00ms
+2025-07-23 13:06:17,336 - DataLogger - WARNING - High tick latency for AUDUSD: 95.00ms
+2025-07-23 13:06:18,283 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 13:06:18,292 - DataLogger - WARNING - High tick latency for AUDUSD: 55.00ms
+2025-07-23 13:06:19,285 - DataLogger - WARNING - High tick latency for AUDUSD: 47.00ms
+2025-07-23 13:06:19,293 - DataLogger - WARNING - High tick latency for USDJPY: 56.00ms
+2025-07-23 13:06:19,488 - DataLogger - WARNING - High tick latency for AUDUSD: 48.00ms
+2025-07-23 13:06:19,883 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 13:06:20,481 - DataLogger - WARNING - High tick latency for AUDUSD: 44.00ms
+2025-07-23 13:06:20,679 - DataLogger - WARNING - High tick latency for USDJPY: 42.00ms
+2025-07-23 13:06:21,690 - DataLogger - WARNING - High tick latency for USDJPY: 51.00ms
+2025-07-23 13:06:22,683 - DataLogger - WARNING - High tick latency for EURUSD: 46.00ms
+2025-07-23 13:06:22,690 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 13:06:22,888 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-23 13:06:22,896 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 13:06:23,892 - DataLogger - WARNING - High tick latency for EURUSD: 51.00ms
+2025-07-23 13:06:24,889 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 13:06:24,896 - DataLogger - WARNING - High tick latency for USDJPY: 56.00ms
+2025-07-23 13:06:24,936 - DataLogger - WARNING - High tick latency for AUDUSD: 95.00ms
+2025-07-23 13:06:25,484 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-23 13:06:25,491 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-23 13:06:25,688 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-23 13:06:25,885 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 13:06:26,098 - DataLogger - WARNING - High tick latency for GBPUSD: 60.00ms
+2025-07-23 13:06:27,083 - DataLogger - WARNING - High tick latency for GBPUSD: 46.00ms
+2025-07-23 13:06:27,878 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 13:06:28,115 - DataLogger - WARNING - High tick latency for USDJPY: 62.00ms
+2025-07-23 13:06:28,123 - DataLogger - WARNING - High tick latency for EURUSD: 85.00ms
+2025-07-23 13:06:28,129 - DataLogger - WARNING - High tick latency for AUDUSD: 88.00ms
+2025-07-23 13:06:28,136 - DataLogger - WARNING - High tick latency for GBPUSD: 95.00ms
+2025-07-23 13:06:28,284 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 13:06:28,317 - DataLogger - WARNING - High tick latency for EURUSD: 71.00ms
+2025-07-23 13:06:28,488 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-23 13:06:28,888 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-23 13:06:29,296 - DataLogger - WARNING - High tick latency for GBPUSD: 53.00ms
+2025-07-23 13:06:29,318 - DataLogger - WARNING - High tick latency for USDJPY: 74.00ms
+2025-07-23 13:06:29,324 - DataLogger - WARNING - High tick latency for EURUSD: 81.00ms
+2025-07-23 13:06:29,487 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 13:06:29,688 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 13:06:29,695 - DataLogger - WARNING - High tick latency for EURUSD: 47.00ms
+2025-07-23 13:06:30,092 - DataLogger - WARNING - High tick latency for GBPUSD: 47.00ms
+2025-07-23 13:06:30,098 - DataLogger - WARNING - High tick latency for USDJPY: 54.00ms
+2025-07-23 13:06:30,294 - DataLogger - WARNING - High tick latency for USDJPY: 54.00ms
+2025-07-23 13:06:30,493 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 13:06:30,499 - DataLogger - WARNING - High tick latency for EURUSD: 60.00ms
+2025-07-23 13:06:30,681 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 13:06:30,891 - DataLogger - WARNING - High tick latency for EURUSD: 48.00ms
+2025-07-23 13:06:31,287 - DataLogger - WARNING - High tick latency for USDJPY: 46.00ms
+2025-07-23 13:06:31,489 - DataLogger - WARNING - High tick latency for USDJPY: 44.00ms
+2025-07-23 13:06:31,714 - DataLogger - WARNING - High tick latency for AUDUSD: 56.00ms
+2025-07-23 13:06:32,295 - DataLogger - WARNING - High tick latency for AUDUSD: 53.00ms
+2025-07-23 13:06:32,478 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 13:06:32,488 - DataLogger - WARNING - High tick latency for AUDUSD: 47.00ms
+2025-07-23 13:06:33,288 - DataLogger - WARNING - High tick latency for AUDUSD: 49.00ms
+2025-07-23 13:06:33,295 - DataLogger - WARNING - High tick latency for GBPUSD: 55.00ms
+2025-07-23 13:06:33,316 - DataLogger - WARNING - High tick latency for USDJPY: 76.00ms
+2025-07-23 13:06:33,689 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-23 13:06:33,892 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-23 13:06:34,088 - DataLogger - WARNING - High tick latency for AUDUSD: 46.00ms
+2025-07-23 13:06:34,093 - DataLogger - WARNING - High tick latency for GBPUSD: 51.00ms
+2025-07-23 13:06:34,684 - DataLogger - WARNING - High tick latency for AUDUSD: 47.00ms
+2025-07-23 13:06:34,691 - DataLogger - WARNING - High tick latency for USDJPY: 53.00ms
+2025-07-23 13:06:34,695 - DataLogger - WARNING - High tick latency for EURUSD: 57.00ms
+2025-07-23 13:06:34,700 - DataLogger - WARNING - High tick latency for GBPUSD: 62.00ms
+2025-07-23 13:06:34,890 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-23 13:06:35,287 - DataLogger - WARNING - High tick latency for USDJPY: 50.00ms
+2025-07-23 13:06:35,293 - DataLogger - WARNING - High tick latency for GBPUSD: 56.00ms
+2025-07-23 13:06:35,299 - DataLogger - WARNING - High tick latency for AUDUSD: 62.00ms
+2025-07-23 13:06:35,694 - DataLogger - WARNING - High tick latency for AUDUSD: 48.00ms
+2025-07-23 13:06:35,718 - DataLogger - WARNING - High tick latency for USDJPY: 72.00ms
+2025-07-23 13:06:35,724 - DataLogger - WARNING - High tick latency for GBPUSD: 79.00ms
+2025-07-23 15:51:22,855 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 15:51:22,882 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 15:51:40,764 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 15:51:40,819 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 15:56:24,118 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 15:56:24,167 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 15:56:24,169 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 15:56:24,170 - TradingClient - INFO - Initializing live trading system...
+2025-07-23 15:56:24,172 - TradingClient - INFO - Starting live trading demo...
+2025-07-23 15:56:24,173 - TradingClient - INFO - Demo will trade EURUSD (ID: 1)
+2025-07-23 15:56:24,175 - TradingClient - INFO - Live trading demo started successfully
+2025-07-23 15:56:34,177 - TradingClient - INFO - TradingClient Status:
+2025-07-23 15:56:34,180 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 15:56:34,181 - TradingClient - INFO -   Pending Orders: 0
+2025-07-23 15:56:34,183 - TradingClient - INFO -   No trades completed yet
+2025-07-23 15:56:34,184 - TradingClient - INFO -   Session Time: 0.2 minutes
+2025-07-23 15:56:34,185 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 15:56:44,187 - TradingClient - INFO - TradingClient Status:
+2025-07-23 15:56:44,190 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 15:56:44,192 - TradingClient - INFO -   Pending Orders: 0
+2025-07-23 15:56:44,193 - TradingClient - INFO -   No trades completed yet
+2025-07-23 15:56:44,195 - TradingClient - INFO -   Session Time: 0.3 minutes
+2025-07-23 15:56:44,196 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 15:56:54,198 - TradingClient - INFO - TradingClient Status:
+2025-07-23 15:56:54,216 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 15:56:54,218 - TradingClient - INFO -   Pending Orders: 0
+2025-07-23 15:56:54,221 - TradingClient - INFO -   No trades completed yet
+2025-07-23 15:56:54,223 - TradingClient - INFO -   Session Time: 0.5 minutes
+2025-07-23 15:56:54,225 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 15:57:04,227 - TradingClient - INFO - TradingClient Status:
+2025-07-23 15:57:04,232 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 15:57:04,234 - TradingClient - INFO -   Pending Orders: 0
+2025-07-23 15:57:04,237 - TradingClient - INFO -   No trades completed yet
+2025-07-23 15:57:04,239 - TradingClient - INFO -   Session Time: 0.7 minutes
+2025-07-23 15:57:04,241 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 15:57:14,243 - TradingClient - INFO - TradingClient Status:
+2025-07-23 15:57:14,248 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 15:57:14,250 - TradingClient - INFO -   Pending Orders: 0
+2025-07-23 15:57:14,252 - TradingClient - INFO -   No trades completed yet
+2025-07-23 15:57:14,255 - TradingClient - INFO -   Session Time: 0.8 minutes
+2025-07-23 15:57:14,257 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 15:57:24,259 - TradingClient - INFO - TradingClient Status:
+2025-07-23 15:57:24,262 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 15:57:24,264 - TradingClient - INFO -   Pending Orders: 0
+2025-07-23 15:57:24,265 - TradingClient - INFO -   No trades completed yet
+2025-07-23 15:57:24,270 - TradingClient - INFO -   Session Time: 1.0 minutes
+2025-07-23 15:57:24,272 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 15:57:34,277 - TradingClient - INFO - TradingClient Status:
+2025-07-23 15:57:34,283 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 15:57:34,287 - TradingClient - INFO -   Pending Orders: 0
+2025-07-23 15:57:34,291 - TradingClient - INFO -   No trades completed yet
+2025-07-23 15:57:34,294 - TradingClient - INFO -   Session Time: 1.2 minutes
+2025-07-23 15:57:34,298 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 15:57:41,432 - TradingClient - INFO - Stopping live trading...
+2025-07-23 15:57:41,435 - TradingClient - INFO - Trading stopped
+2025-07-23 15:59:35,071 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 15:59:35,084 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 15:59:35,087 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 15:59:35,088 - TradingClient - INFO - Initializing live trading system...
+2025-07-23 15:59:35,089 - TradingClient - INFO - Starting live trading demo...
+2025-07-23 16:01:29,567 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 16:01:29,581 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 16:01:29,584 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 16:01:29,587 - TradingClient - INFO - Initializing live trading system...
+2025-07-23 16:01:29,589 - TradingClient - INFO - Starting live trading demo...
+2025-07-23 16:01:59,590 - TradingClient - ERROR - FIX session not ready after 30 seconds
+2025-07-23 16:01:59,595 - TradingClient - ERROR - Failed to start live trading demo
+2025-07-23 16:05:15,574 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 16:05:15,624 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 16:05:15,631 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 16:05:15,635 - TradingClient - INFO - Initializing live trading system...
+2025-07-23 16:05:15,638 - TradingClient - INFO - Starting live trading demo...
+2025-07-23 16:05:15,640 - TradingClient - INFO - Waiting for FIX session to be ready...
+2025-07-23 16:05:45,648 - TradingClient - ERROR - FIX session not ready after 30 seconds
+2025-07-23 16:05:45,658 - TradingClient - ERROR - Failed to start live trading demo
+2025-07-23 16:11:35,090 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 16:11:35,132 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 16:11:35,135 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 16:11:35,138 - TradingClient - INFO - Initializing live trading system...
+2025-07-23 16:11:35,140 - TradingClient - INFO - Starting live trading demo...
+2025-07-23 16:11:35,141 - TradingClient - INFO - Waiting for FIX session to be ready...
+2025-07-23 16:12:05,147 - TradingClient - ERROR - FIX session not ready after 30 seconds
+2025-07-23 16:12:05,158 - TradingClient - ERROR - Failed to start live trading demo
+2025-07-23 18:19:29,490 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 18:19:29,531 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 18:19:29,534 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 18:19:29,535 - TradingClient - INFO - Initializing live trading system...
+2025-07-23 18:19:29,537 - TradingClient - INFO - Starting live trading demo...
+2025-07-23 18:19:29,538 - TradingClient - INFO - Waiting for FIX session to be ready...
+2025-07-23 18:19:59,543 - TradingClient - ERROR - FIX session not ready after 30 seconds
+2025-07-23 18:19:59,546 - TradingClient - ERROR - Failed to start live trading demo
+2025-07-23 18:23:09,681 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 18:23:09,694 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 18:23:09,697 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 18:28:33,657 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 18:28:33,671 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 18:28:33,674 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 18:29:07,275 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 18:29:07,289 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 18:29:07,292 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 18:35:39,374 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 18:35:39,388 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 18:35:39,391 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 18:40:11,660 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-23 18:40:11,688 - LiveTradingDemo - INFO - Initializing live trading demo...
+2025-07-23 18:40:11,692 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 18:40:11,703 - TradingClient - INFO - TradingClient initialized for live trading
+2025-07-23 18:40:11,736 - TradingClient - INFO - Initializing live trading system...
+2025-07-23 18:40:11,738 - TradingClient - INFO - Starting live trading demo...
+2025-07-23 18:40:11,739 - TradingClient - INFO - Waiting for FIX session to be ready...
+2025-07-23 18:40:11,740 - TradingClient - INFO - FIX session ready!
+2025-07-23 18:40:11,742 - TradingClient - INFO - Demo will trade EURUSD (ID: 1)
+2025-07-23 18:40:11,743 - TradingClient - INFO - Live trading demo started successfully
+2025-07-23 18:40:12,126 - TradingClient - WARNING - Missing required fields in execution report
+2025-07-23 18:40:13,745 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:40:13,749 - Symbol_EURUSD - INFO - Order sent: BUY EURUSD @ market (Qty: 10)
+2025-07-23 18:40:13,752 - Symbol_EURUSD - INFO - Order ID: 210a4217-5262-47cc-a00f-4975459d00c0
+2025-07-23 18:40:13,754 - TradingClient - INFO - Demo order placed successfully, will auto-close in 10 seconds
+2025-07-23 18:40:13,837 - TradingClient - WARNING - Missing required fields in execution report
+2025-07-23 18:40:16,738 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:40:16,741 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:40:16,742 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:40:16,743 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:40:16,744 - TradingClient - INFO -   Session Time: 0.1 minutes
+2025-07-23 18:40:16,745 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:40:26,757 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:40:26,760 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:40:26,762 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:40:26,763 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:40:26,764 - TradingClient - INFO -   Session Time: 0.3 minutes
+2025-07-23 18:40:26,765 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:40:28,757 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:40:28,759 - Symbol_EURUSD - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:40:28,760 - TradingClient - WARNING - Demo order failed
+2025-07-23 18:40:36,773 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:40:36,776 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:40:36,778 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:40:36,779 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:40:36,781 - TradingClient - INFO -   Session Time: 0.4 minutes
+2025-07-23 18:40:36,782 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:40:43,765 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:40:43,768 - Symbol_EURUSD - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:40:43,773 - TradingClient - WARNING - Demo order failed
+2025-07-23 18:40:44,751 - TradingClient - WARNING - Missing required fields in execution report
+2025-07-23 18:40:46,785 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:40:46,788 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:40:46,789 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:40:46,794 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:40:46,795 - TradingClient - INFO -   Session Time: 0.6 minutes
+2025-07-23 18:40:46,797 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:40:56,805 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:40:56,817 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:40:56,819 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:40:56,820 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:40:56,822 - TradingClient - INFO -   Session Time: 0.8 minutes
+2025-07-23 18:40:56,823 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:40:58,777 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:40:58,780 - Symbol_EURUSD - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:40:58,783 - TradingClient - WARNING - Demo order failed
+2025-07-23 18:40:59,751 - TradingClient - WARNING - Missing required fields in execution report
+2025-07-23 18:41:06,831 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:06,836 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:06,839 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:06,843 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:06,845 - TradingClient - INFO -   Session Time: 0.9 minutes
+2025-07-23 18:41:06,849 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:13,789 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:41:13,792 - Symbol_EURUSD - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:13,795 - TradingClient - WARNING - Demo order failed
+2025-07-23 18:41:16,853 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:16,859 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:16,862 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:16,864 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:16,867 - TradingClient - INFO -   Session Time: 1.1 minutes
+2025-07-23 18:41:16,870 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:26,873 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:26,875 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:26,878 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:26,879 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:26,880 - TradingClient - INFO -   Session Time: 1.3 minutes
+2025-07-23 18:41:26,882 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:28,801 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:41:28,819 - Symbol_EURUSD - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:28,822 - TradingClient - WARNING - Demo order failed
+2025-07-23 18:41:29,413 - TradingClient - WARNING - Missing required fields in execution report
+2025-07-23 18:41:34,048 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:34,052 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:34,053 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:34,055 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:34,056 - TradingClient - INFO -   Session Time: 1.4 minutes
+2025-07-23 18:41:34,058 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:36,887 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:36,890 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:36,892 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:36,893 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:36,894 - TradingClient - INFO -   Session Time: 1.4 minutes
+2025-07-23 18:41:36,895 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:43,829 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:41:43,853 - Symbol_EURUSD - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:43,860 - TradingClient - WARNING - Demo order failed
+2025-07-23 18:41:44,060 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:44,062 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:44,063 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:44,064 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:44,066 - TradingClient - INFO -   Session Time: 1.5 minutes
+2025-07-23 18:41:44,068 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:46,901 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:46,919 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:46,920 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:46,925 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:46,927 - TradingClient - INFO -   Session Time: 1.6 minutes
+2025-07-23 18:41:46,928 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:54,076 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:54,079 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:54,080 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:54,082 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:54,084 - TradingClient - INFO -   Session Time: 1.7 minutes
+2025-07-23 18:41:54,085 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:56,933 - TradingClient - INFO - TradingClient Status:
+2025-07-23 18:41:56,935 - TradingClient - INFO -   Active Positions: 0
+2025-07-23 18:41:56,937 - TradingClient - INFO -   Pending Orders: 1
+2025-07-23 18:41:56,938 - TradingClient - INFO -   No trades completed yet
+2025-07-23 18:41:56,939 - TradingClient - INFO -   Session Time: 1.8 minutes
+2025-07-23 18:41:56,940 - TradingClient - INFO -   Auto-close timers: 0
+2025-07-23 18:41:58,865 - TradingClient - INFO - Placing demo BUY order for EURUSD
+2025-07-23 18:41:58,868 - Symbol_EURUSD - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:58,870 - TradingClient - WARNING - Demo order failed
+2025-07-24 13:38:09,153 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-24 13:40:44,018 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-24 13:44:36,692 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-24 13:47:06,931 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-24 13:47:07,120 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250724.log, dom=dom_data_eurusd_20250724.log
+2025-07-24 13:47:07,126 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250724.log, dom=dom_data_gbpusd_20250724.log
+2025-07-24 13:47:07,131 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250724.log, dom=dom_data_usdjpy_20250724.log
+2025-07-24 13:47:07,135 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250724.log, dom=dom_data_audusd_20250724.log
+2025-07-24 13:47:07,136 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-24 13:47:07,218 - DataLogger - INFO - All data log files closed
+2025-07-24 13:47:46,489 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-24 13:47:46,576 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250724.log, dom=dom_data_eurusd_20250724.log
+2025-07-24 13:47:46,579 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250724.log, dom=dom_data_gbpusd_20250724.log
+2025-07-24 13:47:46,582 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250724.log, dom=dom_data_usdjpy_20250724.log
+2025-07-24 13:47:46,585 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250724.log, dom=dom_data_audusd_20250724.log
+2025-07-24 13:47:46,586 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-24 13:47:46,620 - main - INFO - ============================================================
+2025-07-24 13:47:46,621 - main - INFO - HFT BASE LITE - STARTING
+2025-07-24 13:47:46,622 - main - INFO - ============================================================
+2025-07-24 13:47:46,623 - main - INFO - Active Symbols: 4
+2025-07-24 13:47:46,625 - main - INFO -   1: EURUSD
+2025-07-24 13:47:46,626 - main - INFO -   2: GBPUSD
+2025-07-24 13:47:46,627 - main - INFO -   4: USDJPY
+2025-07-24 13:47:46,628 - main - INFO -   5: AUDUSD
+2025-07-24 13:47:46,629 - main - INFO - Session Duration: 60 minutes
+2025-07-24 13:47:46,631 - main - INFO - ============================================================
+2025-07-24 13:47:46,632 - main - INFO - Initializing DataCollector...
+2025-07-24 13:47:46,634 - TickClient_EURUSD - INFO - TickClient initialized for EURUSD
+2025-07-24 13:47:46,636 - DepthClient_EURUSD - INFO - DepthClient initialized for EURUSD
+2025-07-24 13:47:46,637 - TickClient_GBPUSD - INFO - TickClient initialized for GBPUSD
+2025-07-24 13:47:46,638 - DepthClient_GBPUSD - INFO - DepthClient initialized for GBPUSD
+2025-07-24 13:47:46,639 - TickClient_USDJPY - INFO - TickClient initialized for USDJPY
+2025-07-24 13:47:46,641 - DepthClient_USDJPY - INFO - DepthClient initialized for USDJPY
+2025-07-24 13:47:46,641 - TickClient_AUDUSD - INFO - TickClient initialized for AUDUSD
+2025-07-24 13:47:46,642 - DepthClient_AUDUSD - INFO - DepthClient initialized for AUDUSD
+2025-07-24 13:47:46,643 - TradingClient - INFO - TradingClient initialized
+2025-07-24 13:47:46,644 - DataLogger - INFO - Data logging session started
+2025-07-24 13:47:46,646 - DataCollector - INFO - DataCollector initialized for simplified HFT trading
+2025-07-24 13:47:46,647 - DataCollector - INFO - === System Status ===
+2025-07-24 13:47:46,648 - DataCollector - INFO - OpenAPI: Disconnected
+2025-07-24 13:47:46,649 - DataCollector - INFO - FIX: Disconnected
+2025-07-24 13:47:46,650 - DataCollector - INFO - Active Positions: 0
+2025-07-24 13:47:46,651 - DataCollector - INFO - Ready Symbols: 0/4
+2025-07-24 13:47:46,652 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-24 13:47:46,653 - DataCollector - INFO - ====================
+2025-07-24 13:47:46,654 - main - INFO - Starting trading system...
+2025-07-24 13:47:46,656 - main - INFO - Press Ctrl+C to stop
+2025-07-24 13:47:46,656 - DataCollector - INFO - Starting HFT Base Lite data collector...
+2025-07-24 13:47:46,666 - DataCollector - INFO - FIX connected
+2025-07-24 13:47:46,705 - DataCollector - INFO - OpenAPI connected - authenticating...
+2025-07-24 13:47:47,820 - DataLogger - INFO - Raw payload logging initialized: raw_payloads_20250724.log
+2025-07-24 13:47:47,822 - DataCollector - INFO - Application authenticated - getting accounts...
+2025-07-24 13:47:48,796 - DataCollector - INFO - Available accounts:
+2025-07-24 13:47:48,798 - DataCollector - INFO -   - Account ID: 43022787
+2025-07-24 13:47:48,799 - DataCollector - INFO -   - Account ID: 43035165
+2025-07-24 13:47:48,815 - DataCollector - INFO - ✅ Found working account: 43035165
+2025-07-24 13:47:48,816 - DataCollector - INFO - Using account: 43035165
+2025-07-24 13:47:49,819 - DataCollector - INFO - Account 43035165 authenticated - subscribing to market data...
+2025-07-24 13:47:49,822 - DataCollector - INFO - Subscribed to spots for all symbols: [1, 2, 4, 5]
+2025-07-24 13:47:49,825 - DataCollector - INFO - Subscribed to depth for all symbols: [1, 2, 4, 5]
+2025-07-24 13:47:50,787 - DataLogger - ERROR - Error logging tick data for symbol 1: unsupported format string passed to NoneType.__format__
+2025-07-24 13:47:50,790 - DataLogger - ERROR - Error logging tick data for symbol 2: unsupported format string passed to NoneType.__format__
+2025-07-24 13:47:50,792 - DataLogger - ERROR - Error logging tick data for symbol 4: unsupported format string passed to NoneType.__format__
+2025-07-24 13:47:50,794 - DataLogger - ERROR - Error logging tick data for symbol 5: unsupported format string passed to NoneType.__format__
+2025-07-24 13:47:50,796 - DataCollector - INFO - Spot subscription confirmed for account 43035165
+2025-07-24 13:47:50,863 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 13:47:50,869 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 13:47:50,874 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 13:47:50,878 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 13:47:50,889 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-24 13:47:51,289 - DataLogger - WARNING - High tick latency for GBPUSD: 50.00ms
+2025-07-24 13:47:51,295 - DataLogger - WARNING - High tick latency for USDJPY: 56.00ms
+2025-07-24 13:47:51,299 - DataLogger - WARNING - High tick latency for EURUSD: 61.00ms
+2025-07-24 13:47:51,321 - DataLogger - WARNING - High tick latency for AUDUSD: 72.00ms
+2025-07-24 13:47:51,479 - DataLogger - WARNING - High tick latency for EURUSD: 44.00ms
+2025-07-24 13:47:51,484 - DataLogger - WARNING - High tick latency for AUDUSD: 45.00ms
+2025-07-24 13:47:51,682 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-24 13:47:51,688 - DataLogger - WARNING - High tick latency for AUDUSD: 51.00ms
+2025-07-24 13:47:51,889 - DataLogger - WARNING - High tick latency for EURUSD: 52.00ms
+2025-07-24 13:47:51,894 - DataLogger - WARNING - High tick latency for GBPUSD: 58.00ms
+2025-07-24 13:47:51,899 - DataLogger - WARNING - High tick latency for AUDUSD: 62.00ms
+2025-07-24 13:47:52,280 - DataLogger - WARNING - High tick latency for EURUSD: 43.00ms
+2025-07-24 13:47:52,285 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-24 13:47:52,291 - DataLogger - WARNING - High tick latency for AUDUSD: 43.00ms
+2025-07-24 13:47:52,681 - DataLogger - WARNING - High tick latency for USDJPY: 47.00ms
+2025-07-24 13:47:52,688 - DataLogger - WARNING - High tick latency for EURUSD: 53.00ms
+2025-07-24 13:47:52,693 - DataLogger - WARNING - High tick latency for GBPUSD: 58.00ms
+2025-07-24 13:47:53,288 - DataLogger - WARNING - High tick latency for EURUSD: 49.00ms
+2025-07-24 13:47:53,295 - DataLogger - WARNING - High tick latency for USDJPY: 52.00ms
+2025-07-24 13:47:53,494 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-24 13:47:53,878 - DataLogger - WARNING - High tick latency for USDJPY: 43.00ms
+2025-07-24 13:47:54,286 - DataLogger - WARNING - High tick latency for GBPUSD: 44.00ms
+2025-07-24 13:47:54,291 - DataLogger - WARNING - High tick latency for USDJPY: 48.00ms
+2025-07-24 13:47:54,484 - DataLogger - WARNING - High tick latency for USDJPY: 45.00ms
+2025-07-24 13:47:54,489 - DataLogger - WARNING - High tick latency for EURUSD: 50.00ms
+2025-07-24 13:47:54,683 - main - INFO - Shutdown signal received. Stopping system...
+2025-07-24 13:47:54,685 - DataCollector - INFO - Stopping data collector...
+2025-07-24 13:47:54,687 - DataLogger - INFO - ================================================================================
+2025-07-24 13:47:54,688 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-24 13:47:54,690 - DataLogger - INFO - ================================================================================
+2025-07-24 13:47:54,691 - DataLogger - INFO - 
+EURUSD:
+2025-07-24 13:47:54,693 - DataLogger - INFO -   TICK DATA (9 updates):
+2025-07-24 13:47:54,694 - DataLogger - INFO -     Average: 193.89ms
+2025-07-24 13:47:54,696 - DataLogger - INFO -     Min/Max: 43.00ms / 1349.00ms
+2025-07-24 13:47:54,697 - DataLogger - INFO -     P50/P95/P99: 50.00ms / 61.00ms / 61.00ms
+2025-07-24 13:47:54,699 - DataLogger - INFO -   DOM DATA (14 updates):
+2025-07-24 13:47:54,713 - DataLogger - INFO -     Average: 0.14ms
+2025-07-24 13:47:54,715 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,717 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-24 13:47:54,718 - DataLogger - INFO - 
+GBPUSD:
+2025-07-24 13:47:54,720 - DataLogger - INFO -   TICK DATA (5 updates):
+2025-07-24 13:47:54,721 - DataLogger - INFO -     Average: 273.00ms
+2025-07-24 13:47:54,723 - DataLogger - INFO -     Min/Max: 44.00ms / 1155.00ms
+2025-07-24 13:47:54,724 - DataLogger - INFO -     P50/P95/P99: 58.00ms / 58.00ms / 58.00ms
+2025-07-24 13:47:54,726 - DataLogger - INFO -   DOM DATA (13 updates):
+2025-07-24 13:47:54,727 - DataLogger - INFO -     Average: 0.08ms
+2025-07-24 13:47:54,728 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,731 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 13:47:54,732 - DataLogger - INFO - 
+USDJPY:
+2025-07-24 13:47:54,733 - DataLogger - INFO -   TICK DATA (10 updates):
+2025-07-24 13:47:54,735 - DataLogger - INFO -     Average: 78.80ms
+2025-07-24 13:47:54,736 - DataLogger - INFO -     Min/Max: 43.00ms / 355.00ms
+2025-07-24 13:47:54,738 - DataLogger - INFO -     P50/P95/P99: 48.00ms / 56.00ms / 56.00ms
+2025-07-24 13:47:54,739 - DataLogger - INFO -   DOM DATA (15 updates):
+2025-07-24 13:47:54,741 - DataLogger - INFO -     Average: 0.27ms
+2025-07-24 13:47:54,742 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,743 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-24 13:47:54,744 - DataLogger - INFO - 
+AUDUSD:
+2025-07-24 13:47:54,746 - DataLogger - INFO -   TICK DATA (6 updates):
+2025-07-24 13:47:54,747 - DataLogger - INFO -     Average: 104.00ms
+2025-07-24 13:47:54,749 - DataLogger - INFO -     Min/Max: 43.00ms / 351.00ms
+2025-07-24 13:47:54,751 - DataLogger - INFO -     P50/P95/P99: 51.00ms / 72.00ms / 72.00ms
+2025-07-24 13:47:54,756 - DataLogger - INFO -   DOM DATA (12 updates):
+2025-07-24 13:47:54,758 - DataLogger - INFO -     Average: 0.17ms
+2025-07-24 13:47:54,759 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,761 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-24 13:47:54,762 - DataLogger - INFO - ================================================================================
+2025-07-24 13:47:54,764 - DataLogger - ERROR - Error closing log files: reentrant call inside <_io.BufferedWriter name='/workspace/HFT-BASE-main/HFT_BASE_LITE/data_logs/raw_payloads_20250724.log'>
+2025-07-24 13:47:54,835 - DataCollector - WARNING - OpenAPI disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-24 13:47:54,838 - DataCollector - WARNING - FIX disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-24 13:47:54,841 - main - INFO - Generating final performance report...
+2025-07-24 13:47:54,843 - main - INFO - FINAL SYSTEM STATUS:
+2025-07-24 13:47:54,844 - main - INFO -   Performance: No trades completed yet
+2025-07-24 13:47:54,847 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.1 minutes
+Ticks Processed: 30
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 3.10ms
+  95th Percentile: 15.55ms
+  Min/Max: 1.33ms / 17.63ms
+  Sample Count: 30
+
+Depth Processing Latencies:
+  Average: 0.59ms
+  95th Percentile: 1.08ms
+  Min/Max: 0.04ms / 1.41ms
+  Sample Count: 54
+
+============================================================
+2025-07-24 13:47:54,848 - TradingClient - INFO - TradingClient Status:
+2025-07-24 13:47:54,849 - TradingClient - INFO -   Active Positions: 0
+2025-07-24 13:47:54,851 - TradingClient - INFO -   No trades completed yet
+2025-07-24 13:47:54,852 - TradingClient - INFO -   Session Time: 0.1 minutes
+2025-07-24 13:47:54,853 - DataCollector - INFO - Stopping data collector...
+2025-07-24 13:47:54,855 - DataLogger - INFO - ================================================================================
+2025-07-24 13:47:54,857 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-24 13:47:54,858 - DataLogger - INFO - ================================================================================
+2025-07-24 13:47:54,859 - DataLogger - INFO - 
+EURUSD:
+2025-07-24 13:47:54,861 - DataLogger - INFO -   TICK DATA (9 updates):
+2025-07-24 13:47:54,862 - DataLogger - INFO -     Average: 193.89ms
+2025-07-24 13:47:54,863 - DataLogger - INFO -     Min/Max: 43.00ms / 1349.00ms
+2025-07-24 13:47:54,865 - DataLogger - INFO -     P50/P95/P99: 50.00ms / 61.00ms / 61.00ms
+2025-07-24 13:47:54,866 - DataLogger - INFO -   DOM DATA (14 updates):
+2025-07-24 13:47:54,868 - DataLogger - INFO -     Average: 0.14ms
+2025-07-24 13:47:54,869 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,871 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-24 13:47:54,872 - DataLogger - INFO - 
+GBPUSD:
+2025-07-24 13:47:54,874 - DataLogger - INFO -   TICK DATA (5 updates):
+2025-07-24 13:47:54,875 - DataLogger - INFO -     Average: 273.00ms
+2025-07-24 13:47:54,877 - DataLogger - INFO -     Min/Max: 44.00ms / 1155.00ms
+2025-07-24 13:47:54,878 - DataLogger - INFO -     P50/P95/P99: 58.00ms / 58.00ms / 58.00ms
+2025-07-24 13:47:54,879 - DataLogger - INFO -   DOM DATA (13 updates):
+2025-07-24 13:47:54,881 - DataLogger - INFO -     Average: 0.08ms
+2025-07-24 13:47:54,882 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,883 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 13:47:54,885 - DataLogger - INFO - 
+USDJPY:
+2025-07-24 13:47:54,886 - DataLogger - INFO -   TICK DATA (10 updates):
+2025-07-24 13:47:54,887 - DataLogger - INFO -     Average: 78.80ms
+2025-07-24 13:47:54,888 - DataLogger - INFO -     Min/Max: 43.00ms / 355.00ms
+2025-07-24 13:47:54,890 - DataLogger - INFO -     P50/P95/P99: 48.00ms / 56.00ms / 56.00ms
+2025-07-24 13:47:54,891 - DataLogger - INFO -   DOM DATA (15 updates):
+2025-07-24 13:47:54,892 - DataLogger - INFO -     Average: 0.27ms
+2025-07-24 13:47:54,894 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,895 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-24 13:47:54,897 - DataLogger - INFO - 
+AUDUSD:
+2025-07-24 13:47:54,898 - DataLogger - INFO -   TICK DATA (6 updates):
+2025-07-24 13:47:54,899 - DataLogger - INFO -     Average: 104.00ms
+2025-07-24 13:47:54,914 - DataLogger - INFO -     Min/Max: 43.00ms / 351.00ms
+2025-07-24 13:47:54,916 - DataLogger - INFO -     P50/P95/P99: 51.00ms / 72.00ms / 72.00ms
+2025-07-24 13:47:54,917 - DataLogger - INFO -   DOM DATA (12 updates):
+2025-07-24 13:47:54,919 - DataLogger - INFO -     Average: 0.17ms
+2025-07-24 13:47:54,921 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 13:47:54,922 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 1.00ms / 1.00ms
+2025-07-24 13:47:54,923 - DataLogger - INFO - ================================================================================
+2025-07-24 13:47:54,924 - DataLogger - INFO - All data log files closed
+2025-07-24 13:47:54,926 - main - INFO - ============================================================
+2025-07-24 13:47:54,927 - main - INFO - HFT BASE LITE - SHUTDOWN COMPLETE
+2025-07-24 13:47:54,928 - main - INFO - ============================================================
+2025-07-24 14:15:22,721 - PerformanceMonitor - INFO - PerformanceMonitor initialized for basic latency tracking
+2025-07-24 14:15:22,820 - DataLogger - INFO - Log files initialized for EURUSD: tick=tick_data_eurusd_20250724.log, dom=dom_data_eurusd_20250724.log
+2025-07-24 14:15:22,823 - DataLogger - INFO - Log files initialized for GBPUSD: tick=tick_data_gbpusd_20250724.log, dom=dom_data_gbpusd_20250724.log
+2025-07-24 14:15:22,826 - DataLogger - INFO - Log files initialized for USDJPY: tick=tick_data_usdjpy_20250724.log, dom=dom_data_usdjpy_20250724.log
+2025-07-24 14:15:22,829 - DataLogger - INFO - Log files initialized for AUDUSD: tick=tick_data_audusd_20250724.log, dom=dom_data_audusd_20250724.log
+2025-07-24 14:15:22,830 - DataLogger - INFO - DataLogger initialized with tick and DOM logging
+2025-07-24 14:15:22,840 - main - INFO - ============================================================
+2025-07-24 14:15:22,840 - main - INFO - HFT BASE LITE - STARTING
+2025-07-24 14:15:22,841 - main - INFO - ============================================================
+2025-07-24 14:15:22,842 - main - INFO - Active Symbols: 4
+2025-07-24 14:15:22,843 - main - INFO -   1: EURUSD
+2025-07-24 14:15:22,843 - main - INFO -   2: GBPUSD
+2025-07-24 14:15:22,845 - main - INFO -   4: USDJPY
+2025-07-24 14:15:22,846 - main - INFO -   5: AUDUSD
+2025-07-24 14:15:22,846 - main - INFO - Session Duration: 60 minutes
+2025-07-24 14:15:22,847 - main - INFO - ============================================================
+2025-07-24 14:15:22,848 - main - INFO - Initializing DataCollector...
+2025-07-24 14:15:22,850 - TickClient_EURUSD - INFO - TickClient initialized for EURUSD
+2025-07-24 14:15:22,851 - DepthClient_EURUSD - INFO - DepthClient initialized for EURUSD
+2025-07-24 14:15:22,851 - TickClient_GBPUSD - INFO - TickClient initialized for GBPUSD
+2025-07-24 14:15:22,852 - DepthClient_GBPUSD - INFO - DepthClient initialized for GBPUSD
+2025-07-24 14:15:22,853 - TickClient_USDJPY - INFO - TickClient initialized for USDJPY
+2025-07-24 14:15:22,853 - DepthClient_USDJPY - INFO - DepthClient initialized for USDJPY
+2025-07-24 14:15:22,855 - TickClient_AUDUSD - INFO - TickClient initialized for AUDUSD
+2025-07-24 14:15:22,855 - DepthClient_AUDUSD - INFO - DepthClient initialized for AUDUSD
+2025-07-24 14:15:22,856 - TradingClient - INFO - TradingClient initialized
+2025-07-24 14:15:22,857 - DataLogger - INFO - Data logging session started
+2025-07-24 14:15:22,858 - DataCollector - INFO - DataCollector initialized for simplified HFT trading
+2025-07-24 14:15:22,858 - DataCollector - INFO - === System Status ===
+2025-07-24 14:15:22,863 - DataCollector - INFO - OpenAPI: Disconnected
+2025-07-24 14:15:22,864 - DataCollector - INFO - FIX: Disconnected
+2025-07-24 14:15:22,865 - DataCollector - INFO - Active Positions: 0
+2025-07-24 14:15:22,866 - DataCollector - INFO - Ready Symbols: 0/4
+2025-07-24 14:15:22,867 - DataCollector - INFO - Performance: No trades completed yet
+2025-07-24 14:15:22,867 - DataCollector - INFO - ====================
+2025-07-24 14:15:22,868 - main - INFO - Starting trading system...
+2025-07-24 14:15:22,869 - main - INFO - Press Ctrl+C to stop
+2025-07-24 14:15:22,870 - DataCollector - INFO - Starting HFT Base Lite data collector...
+2025-07-24 14:15:22,879 - DataCollector - INFO - FIX connected
+2025-07-24 14:15:22,894 - DataCollector - INFO - OpenAPI connected - authenticating...
+2025-07-24 14:15:23,991 - DataLogger - INFO - Raw payload logging initialized: raw_payloads_20250724.log
+2025-07-24 14:15:23,993 - DataCollector - INFO - Application authenticated - getting accounts...
+2025-07-24 14:15:24,983 - DataCollector - INFO - Available accounts:
+2025-07-24 14:15:24,986 - DataCollector - INFO -   - Account ID: 43022787
+2025-07-24 14:15:24,987 - DataCollector - INFO -   - Account ID: 43035165
+2025-07-24 14:15:24,988 - DataCollector - INFO - ✅ Found working account: 43035165
+2025-07-24 14:15:24,990 - DataCollector - INFO - Using account: 43035165
+2025-07-24 14:15:25,996 - DataCollector - INFO - Account 43035165 authenticated - subscribing to market data...
+2025-07-24 14:15:25,999 - DataCollector - INFO - Subscribed to spots for all symbols: [1, 2, 4, 5]
+2025-07-24 14:15:26,016 - DataCollector - INFO - Subscribed to depth for all symbols: [1, 2, 4, 5]
+2025-07-24 14:15:26,976 - DataLogger - ERROR - Error logging tick data for symbol 1: unsupported format string passed to NoneType.__format__
+2025-07-24 14:15:26,978 - DataLogger - ERROR - Error logging tick data for symbol 2: unsupported format string passed to NoneType.__format__
+2025-07-24 14:15:26,981 - DataLogger - ERROR - Error logging tick data for symbol 4: unsupported format string passed to NoneType.__format__
+2025-07-24 14:15:26,982 - DataLogger - ERROR - Error logging tick data for symbol 5: unsupported format string passed to NoneType.__format__
+2025-07-24 14:15:26,984 - DataCollector - INFO - Spot subscription confirmed for account 43035165
+2025-07-24 14:15:26,991 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 14:15:27,054 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 14:15:27,060 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 14:15:27,065 - DataCollector - INFO - Depth subscription confirmed for account 43035165
+2025-07-24 14:15:27,085 - DataLogger - WARNING - High tick latency for EURUSD: 45.00ms
+2025-07-24 14:15:27,091 - DataLogger - WARNING - High tick latency for USDJPY: 49.00ms
+2025-07-24 14:15:27,157 - main - INFO - Shutdown signal received. Stopping system...
+2025-07-24 14:15:27,159 - DataCollector - INFO - Stopping data collector...
+2025-07-24 14:15:27,161 - DataLogger - INFO - ================================================================================
+2025-07-24 14:15:27,162 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-24 14:15:27,163 - DataLogger - INFO - ================================================================================
+2025-07-24 14:15:27,166 - DataLogger - INFO - 
+EURUSD:
+2025-07-24 14:15:27,167 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-24 14:15:27,168 - DataLogger - INFO -     Average: 93.00ms
+2025-07-24 14:15:27,170 - DataLogger - INFO -     Min/Max: 45.00ms / 141.00ms
+2025-07-24 14:15:27,172 - DataLogger - INFO -     P50/P95/P99: 45.00ms / 45.00ms / 45.00ms
+2025-07-24 14:15:27,173 - DataLogger - INFO -   DOM DATA (3 updates):
+2025-07-24 14:15:27,175 - DataLogger - INFO -     Average: 0.67ms
+2025-07-24 14:15:27,176 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 14:15:27,177 - DataLogger - INFO -     P50/P95/P99: 1.00ms / 1.00ms / 1.00ms
+2025-07-24 14:15:27,179 - DataLogger - INFO - 
+GBPUSD:
+2025-07-24 14:15:27,180 - DataLogger - INFO -   TICK DATA (1 updates):
+2025-07-24 14:15:27,181 - DataLogger - INFO -     Average: 143.00ms
+2025-07-24 14:15:27,183 - DataLogger - INFO -     Min/Max: 143.00ms / 143.00ms
+2025-07-24 14:15:27,184 - DataLogger - INFO -     P50/P95/P99: 143.00ms / 143.00ms / 143.00ms
+2025-07-24 14:15:27,186 - DataLogger - INFO -   DOM DATA (2 updates):
+2025-07-24 14:15:27,187 - DataLogger - INFO -     Average: 0.00ms
+2025-07-24 14:15:27,188 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-24 14:15:27,190 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 14:15:27,191 - DataLogger - INFO - 
+USDJPY:
+2025-07-24 14:15:27,193 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-24 14:15:27,194 - DataLogger - INFO -     Average: 98.00ms
+2025-07-24 14:15:27,196 - DataLogger - INFO -     Min/Max: 49.00ms / 147.00ms
+2025-07-24 14:15:27,197 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 49.00ms / 49.00ms
+2025-07-24 14:15:27,198 - DataLogger - INFO -   DOM DATA (3 updates):
+2025-07-24 14:15:27,214 - DataLogger - INFO -     Average: 0.00ms
+2025-07-24 14:15:27,216 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-24 14:15:27,217 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 14:15:27,218 - DataLogger - INFO - 
+AUDUSD:
+2025-07-24 14:15:27,220 - DataLogger - INFO -   TICK DATA (1 updates):
+2025-07-24 14:15:27,222 - DataLogger - INFO -     Average: 747.00ms
+2025-07-24 14:15:27,223 - DataLogger - INFO -     Min/Max: 747.00ms / 747.00ms
+2025-07-24 14:15:27,225 - DataLogger - INFO -     P50/P95/P99: 747.00ms / 747.00ms / 747.00ms
+2025-07-24 14:15:27,227 - DataLogger - INFO -   DOM DATA (2 updates):
+2025-07-24 14:15:27,228 - DataLogger - INFO -     Average: 0.00ms
+2025-07-24 14:15:27,230 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-24 14:15:27,232 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 14:15:27,233 - DataLogger - INFO - ================================================================================
+2025-07-24 14:15:27,236 - DataLogger - INFO - All data log files closed
+2025-07-24 14:15:27,296 - DataCollector - WARNING - OpenAPI disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-24 14:15:27,299 - DataCollector - WARNING - FIX disconnected: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+]
+2025-07-24 14:15:27,319 - main - INFO - Generating final performance report...
+2025-07-24 14:15:27,321 - main - INFO - FINAL SYSTEM STATUS:
+2025-07-24 14:15:27,322 - main - INFO -   Performance: No trades completed yet
+2025-07-24 14:15:27,325 - PerformanceMonitor - INFO - 
+============================================================
+PERFORMANCE SUMMARY
+============================================================
+Session Duration: 0.1 minutes
+Ticks Processed: 6
+Orders Sent: 0
+Orders Filled: 0
+
+Tick Processing Latencies:
+  Average: 2.27ms
+  95th Percentile: 2.27ms
+  Min/Max: 1.06ms / 5.67ms
+  Sample Count: 6
+
+Depth Processing Latencies:
+  Average: 0.66ms
+  95th Percentile: 0.66ms
+  Min/Max: 0.03ms / 1.77ms
+  Sample Count: 10
+
+============================================================
+2025-07-24 14:15:27,327 - TradingClient - INFO - TradingClient Status:
+2025-07-24 14:15:27,328 - TradingClient - INFO -   Active Positions: 0
+2025-07-24 14:15:27,330 - TradingClient - INFO -   No trades completed yet
+2025-07-24 14:15:27,332 - TradingClient - INFO -   Session Time: 0.1 minutes
+2025-07-24 14:15:27,333 - DataCollector - INFO - Stopping data collector...
+2025-07-24 14:15:27,335 - DataLogger - INFO - ================================================================================
+2025-07-24 14:15:27,337 - DataLogger - INFO - DATA LATENCY ANALYSIS REPORT
+2025-07-24 14:15:27,338 - DataLogger - INFO - ================================================================================
+2025-07-24 14:15:27,340 - DataLogger - INFO - 
+EURUSD:
+2025-07-24 14:15:27,341 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-24 14:15:27,342 - DataLogger - INFO -     Average: 93.00ms
+2025-07-24 14:15:27,343 - DataLogger - INFO -     Min/Max: 45.00ms / 141.00ms
+2025-07-24 14:15:27,345 - DataLogger - INFO -     P50/P95/P99: 45.00ms / 45.00ms / 45.00ms
+2025-07-24 14:15:27,346 - DataLogger - INFO -   DOM DATA (3 updates):
+2025-07-24 14:15:27,348 - DataLogger - INFO -     Average: 0.67ms
+2025-07-24 14:15:27,350 - DataLogger - INFO -     Min/Max: 0.00ms / 1.00ms
+2025-07-24 14:15:27,351 - DataLogger - INFO -     P50/P95/P99: 1.00ms / 1.00ms / 1.00ms
+2025-07-24 14:15:27,352 - DataLogger - INFO - 
+GBPUSD:
+2025-07-24 14:15:27,353 - DataLogger - INFO -   TICK DATA (1 updates):
+2025-07-24 14:15:27,355 - DataLogger - INFO -     Average: 143.00ms
+2025-07-24 14:15:27,356 - DataLogger - INFO -     Min/Max: 143.00ms / 143.00ms
+2025-07-24 14:15:27,357 - DataLogger - INFO -     P50/P95/P99: 143.00ms / 143.00ms / 143.00ms
+2025-07-24 14:15:27,358 - DataLogger - INFO -   DOM DATA (2 updates):
+2025-07-24 14:15:27,360 - DataLogger - INFO -     Average: 0.00ms
+2025-07-24 14:15:27,361 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-24 14:15:27,363 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 14:15:27,364 - DataLogger - INFO - 
+USDJPY:
+2025-07-24 14:15:27,366 - DataLogger - INFO -   TICK DATA (2 updates):
+2025-07-24 14:15:27,367 - DataLogger - INFO -     Average: 98.00ms
+2025-07-24 14:15:27,368 - DataLogger - INFO -     Min/Max: 49.00ms / 147.00ms
+2025-07-24 14:15:27,370 - DataLogger - INFO -     P50/P95/P99: 49.00ms / 49.00ms / 49.00ms
+2025-07-24 14:15:27,371 - DataLogger - INFO -   DOM DATA (3 updates):
+2025-07-24 14:15:27,372 - DataLogger - INFO -     Average: 0.00ms
+2025-07-24 14:15:27,373 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-24 14:15:27,375 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 14:15:27,376 - DataLogger - INFO - 
+AUDUSD:
+2025-07-24 14:15:27,377 - DataLogger - INFO -   TICK DATA (1 updates):
+2025-07-24 14:15:27,378 - DataLogger - INFO -     Average: 747.00ms
+2025-07-24 14:15:27,380 - DataLogger - INFO -     Min/Max: 747.00ms / 747.00ms
+2025-07-24 14:15:27,381 - DataLogger - INFO -     P50/P95/P99: 747.00ms / 747.00ms / 747.00ms
+2025-07-24 14:15:27,382 - DataLogger - INFO -   DOM DATA (2 updates):
+2025-07-24 14:15:27,383 - DataLogger - INFO -     Average: 0.00ms
+2025-07-24 14:15:27,385 - DataLogger - INFO -     Min/Max: 0.00ms / 0.00ms
+2025-07-24 14:15:27,386 - DataLogger - INFO -     P50/P95/P99: 0.00ms / 0.00ms / 0.00ms
+2025-07-24 14:15:27,387 - DataLogger - INFO - ================================================================================
+2025-07-24 14:15:27,388 - DataLogger - INFO - All data log files closed
+2025-07-24 14:15:27,390 - main - INFO - ============================================================
+2025-07-24 14:15:27,391 - main - INFO - HFT BASE LITE - SHUTDOWN COMPLETE
+2025-07-24 14:15:27,393 - main - INFO - ============================================================

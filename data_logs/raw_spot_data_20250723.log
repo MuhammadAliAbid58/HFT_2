@@ -1,0 +1,13 @@
+received_timestamp_ms,symbol_id,symbol_name,raw_bid,raw_ask,api_timestamp,raw_payload_json
+1753275881192,1,EURUSD,117194,117195,1753275880839,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 1, "bid": 117194, "ask": 117195, "trendbar": [], "sessionClose": 117541, "timestamp": 1753275880839}"
+1753275881222,2,GBPUSD,135367,135368,1753275880839,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 2, "bid": 135367, "ask": 135368, "trendbar": [], "sessionClose": 135335, "timestamp": 1753275880839}"
+1753275881226,4,USDJPY,14651500,14651600,1753275880653,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 4, "bid": 14651500, "ask": 14651600, "trendbar": [], "sessionClose": 14663700, "timestamp": 1753275880653}"
+1753275881230,5,AUDUSD,65897,65897,1753275879245,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 5, "bid": 65897, "ask": 65897, "trendbar": [], "sessionClose": 65551, "timestamp": 1753275879245}"
+1753275881305,1,EURUSD,117197,117198,1753275881246,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 1, "bid": 117197, "ask": 117198, "trendbar": [], "sessionClose": 0, "timestamp": 1753275881246}"
+1753275881322,5,AUDUSD,65898,65898,1753275881246,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 5, "bid": 65898, "ask": 65898, "trendbar": [], "sessionClose": 0, "timestamp": 1753275881246}"
+1753275881504,1,EURUSD,117199,117200,1753275881448,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 1, "bid": 117199, "ask": 117200, "trendbar": [], "sessionClose": 0, "timestamp": 1753275881448}"
+1753275881521,2,GBPUSD,135368,135369,1753275881448,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 2, "bid": 135368, "ask": 135369, "trendbar": [], "sessionClose": 0, "timestamp": 1753275881448}"
+1753275881526,4,USDJPY,14651400,14651500,1753275881448,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 4, "bid": 14651400, "ask": 14651500, "trendbar": [], "sessionClose": 0, "timestamp": 1753275881448}"
+1753275881875,2,GBPUSD,135367,135368,1753275881834,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 2, "bid": 135367, "ask": 135368, "trendbar": [], "sessionClose": 0, "timestamp": 1753275881834}"
+1753275881886,1,EURUSD,0,117199,1753275881836,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 1, "bid": 0, "ask": 117199, "trendbar": [], "sessionClose": 0, "timestamp": 1753275881836}"
+1753275882299,1,EURUSD,117198,117198,1753275882250,"{"payloadType": 2131, "ctidTraderAccountId": 43035165, "symbolId": 1, "bid": 117198, "ask": 117198, "trendbar": [], "sessionClose": 0, "timestamp": 1753275882250}"

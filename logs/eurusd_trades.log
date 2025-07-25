@@ -1,0 +1,9 @@
+2025-07-23 18:40:13,749 - INFO - Order sent: BUY EURUSD @ market (Qty: 10)
+2025-07-23 18:40:13,752 - INFO - Order ID: 210a4217-5262-47cc-a00f-4975459d00c0
+2025-07-23 18:40:28,759 - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:40:43,768 - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:40:58,780 - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:13,792 - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:28,819 - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:43,853 - WARNING - Order blocked: Position already exists for EURUSD
+2025-07-23 18:41:58,868 - WARNING - Order blocked: Position already exists for EURUSD
